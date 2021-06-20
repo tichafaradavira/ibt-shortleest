@@ -1,0 +1,28 @@
+{
+    "name": "modules/applications",
+    "type": "ibt-core",
+    "description": "The applications module to the ibt tutoring system",
+    "authors": [
+        {
+            "name": "Tichafara Davira",
+            "email": "tichafaradavira@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Applications\\Providers\\ModuleServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Applications\\": "/app",
+            "Modules\\Applications\\Database\\Factories\\": "database/factories/",
+            "Modules\\Applications\\Database\\Seeders\\": "database/seeders/"
+        }
+    }
+}

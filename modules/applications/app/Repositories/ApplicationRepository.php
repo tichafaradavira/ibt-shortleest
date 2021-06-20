@@ -1,0 +1,111 @@
+<?php
+
+namespace Modules\Applications\Repositories;
+
+use Illuminate\Support\Arr;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Str;
+use Modules\Applications\Models\Application;
+use Modules\Properties\Models\Property;
+
+class ApplicationRepository
+{
+    public static function browse($browse_inputs, $realtor)
+    {
+        $query = Application::query()
+            ->where('user_id', $realtor->id);
+
+        $properties = $query->paginate(15);
+
+        return $properties;
+    }
+
+
+    function add($data, $realtor)
+    {
+
+        $application = new Application();
+        $token =  Str::random(50);
+        if($property_id = Arr::get($data,'property'))
+        {
+            if($property = Property::query()->where('id',$property_id)
+                ->where('user_id',$realtor->id))
+            {
+                $application->property()->associate($property);
+            }
+            else{
+                return false;
+            }
+        }
+        $data['available_from'] = Carbon::parse(Arr::get($data,'available_from'));
+        $data['token'] = $token;
+        $data['link'] = url("/$realtor->id/".$token);
+        $application->fill($data);
+        $application->realtor()->associate($realtor);
+
+        if ($application->save()) {
+            return $application;
+        } else {
+            return false;
+        }
+
+
+    }
+
+    function edit($data, $application)
+    {
+        $application->fill($data);
+        if ($application->save()) {
+            return $application;
+        } else {
+            return false;
+        }
+    }
+
+    function read($id, $realtor)
+    {
+        $application = Application::query()
+            ->where('id', $id)
+            ->where('user_id', $realtor->id)
+            ->with(['vacancy','vacancy.property'])
+            ->first();
+
+        if ($application) {
+            return $application;
+        } else {
+            return false;
+        }
+    }
+
+    function delete($id, $realtor)
+    {
+        $result = Application::query()
+            ->where('id', $id)
+            ->where('user_id', $realtor->id)
+            ->delete();
+
+        if ($result) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
+
+    function restore($id, $realtor)
+    {
+        $result = Application::withTrashed()
+            ->where('id', $id)
+            ->where('user_id', $realtor->id)
+            ->restore();
+
+        if ($result) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
+
+
+
+
+}

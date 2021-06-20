@@ -1,0 +1,28 @@
+{
+    "name": "modules/properties",
+    "type": "ibt-core",
+    "description": "The properties module to the ibt tutoring system",
+    "authors": [
+        {
+            "name": "Tichafara Davira",
+            "email": "tichafaradavira@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Properties\\Providers\\ModuleServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Properties\\": "/app",
+            "Modules\\Properties\\Database\\Factories\\": "database/factories/",
+            "Modules\\Properties\\Database\\Seeders\\": "database/seeders/"
+        }
+    }
+}
