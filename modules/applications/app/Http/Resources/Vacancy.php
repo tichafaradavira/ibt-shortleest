@@ -21,10 +21,11 @@ class Vacancy extends JsonResource
         return [
             'id' => $this->id,
             'property' => new Property($this->whenLoaded('property')),
-            'status' => $this->vacancy_status,
+            'status' => $this->status,
+            'vacancy_status' => $this->vacancy_status,
             'token' => $this->token,
             'link' => $this->link,
-            'available_from' => $this->available_from,
+            'available_from' => $this->available_from->format('d-m-Y'),
             'created_at'=> $this->created_at,
 
         ];
