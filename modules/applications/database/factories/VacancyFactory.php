@@ -26,6 +26,7 @@ class VacancyFactory extends Factory
         return [
             'status' => $this->faker->boolean ,
             'available_from' => $this->faker->dateTimeThisDecade,
+            'reference' => Str::random(7),
         ];
     }
 }

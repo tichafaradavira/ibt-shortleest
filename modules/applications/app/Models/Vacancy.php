@@ -29,6 +29,7 @@ class Vacancy extends Model
     protected $fillable = [
         'status',
         'available_from',
+        'reference',
         'link',
         'token',
     ];
@@ -42,6 +43,7 @@ class Vacancy extends Model
         'id',
         'status',
         'available_from',
+        'reference',
         'link',
         'token',
 
@@ -72,6 +74,11 @@ class Vacancy extends Model
     public function property()
     {
         return $this->belongsTo(Property::class, 'property_id');
+    }
+
+    public function applications()
+    {
+        return $this->hasMany(Application::class, 'vacancy_id');
     }
 
     function getVacancyStatusAttribute(){

@@ -24,6 +24,7 @@ class Vacancy extends JsonResource
             'status' => $this->status,
             'vacancy_status' => $this->vacancy_status,
             'token' => $this->token,
+            'reference' => $this->reference,
             'link' => $this->link,
             'available_from' => $this->available_from->format('d-m-Y'),
             'created_at'=> $this->created_at,
