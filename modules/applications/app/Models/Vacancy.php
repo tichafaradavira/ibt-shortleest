@@ -91,7 +91,6 @@ class Vacancy extends Model
                 return 'Expired';
             default:
                 return 'Inactive';
-
         }
     }
 

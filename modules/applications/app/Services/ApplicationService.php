@@ -39,7 +39,7 @@ class ApplicationService
     }
 
 
-    function edit($inputs, $id)
+    function editStatus($inputs, $id)
     {
         $application = Application::query()
         ->where('user_id', $this->realtor->id)
@@ -47,7 +47,7 @@ class ApplicationService
         ->first();
 
         if ($application) {
-            $application = $this->repository->edit($inputs, $application);
+            $application = $this->repository->editStatus($inputs, $application);
             return $application;
         } else {
             return false;

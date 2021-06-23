@@ -20,5 +20,6 @@ Route::middleware(['auth:api'])->group(function () {
     Route::get('/applications', [ApplicationsController::class, 'browse'])->name('modules.applications.browse');
     Route::get('/applications/{entity}', [ApplicationsController::class, 'read'])->name('modules.applications.read');
     Route::post('/applications/{entity}/delete', [ApplicationsController::class, 'delete'])->name('modules.applications.read');
+    Route::post('/applications/{entity}/status/edit', [ApplicationsController::class, 'editStatus'])->name('modules.applications.edit.status');
 
 });

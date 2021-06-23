@@ -34,6 +34,7 @@ class ApplicationFactory extends Factory
             'national_id' => $this->faker->bankAccountNumber,
             'gender' => Arr::random(['male', 'female']),
             'dob' => Carbon::now()->addYears(-20),
+            'status' => $this->faker->numberBetween(1, 4),
 
             'mobile_number' => $this->faker->phoneNumber,
             'home_number' => $this->faker->phoneNumber,
