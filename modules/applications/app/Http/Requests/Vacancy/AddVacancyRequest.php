@@ -26,6 +26,7 @@ class AddVacancyRequest extends FormRequest
         return [
 
             'property' => 'required',
+            'reference' => '',
             'status' => 'numeric',
             'available_from' => '',
         ];

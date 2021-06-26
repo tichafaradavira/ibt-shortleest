@@ -22,6 +22,7 @@ class User extends JsonResource
             'first_name' => $this->first_name,
             'is_admin' => $this->is_admin,
             'last_name' => $this->last_name,
+            'company_name' => $this->company_name,
             'email' => $this->email,
             'country'=> $this->country,
             'language' =>  $this->language,

@@ -13,6 +13,7 @@ class VacancyRepository
     public static function browse($browse_inputs, $realtor)
     {
         $query = Vacancy::query()
+            ->with(['property'])
             ->where('user_id', $realtor->id);
 
         $properties = $query->paginate(15);

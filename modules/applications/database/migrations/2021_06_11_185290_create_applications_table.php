@@ -18,6 +18,7 @@ class CreateApplicationsTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('property_id');
             $table->unsignedBigInteger('vacancy_id');
+            $table->unsignedBigInteger('status');
 
             $table->string('first_name');
             $table->string('middle_name')->nullable();

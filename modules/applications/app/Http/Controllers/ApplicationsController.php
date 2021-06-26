@@ -55,6 +55,17 @@ class ApplicationsController extends Controller
         }
     }
 
+    function editStatus(Request $request, ApplicationService $service, $entity)
+    {
+        $inputs = $request->all();
+        $application = $service->editStatus($inputs, $entity);
+        if ($application) {
+            return response($application, 200);
+        } else {
+            return response('Cannot restore Application', 422);
+        }
+    }
+
 
 
 }
