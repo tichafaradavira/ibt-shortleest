@@ -84,9 +84,9 @@ class UserController extends Controller
 
         $user = $service->resetPassword($inputs);
         if ($user) {
-            return response('PASSWORD_RESET', 200);
+            return response('Password reset, you can login', 200);
         } else {
-            return response('PASSWORD_NOT_RESET', 422);
+            return response('Invalid One Time Pin', 422);
 
         }
     }
@@ -96,14 +96,14 @@ class UserController extends Controller
         $email = $request->input('email');
         $user = $service->getUserByEmail($email);
         if(!$user){
-            return response('EMAIL_NOT_FOUND', 401);
+            return response('User with provided email address not found', 401);
         }
 
         $result = $service->forgotPassword($user);
         if ($result) {
             return response('PASSWORD_RESET_EMAIL_SEND', 200);
         } else {
-            return response('lINK EXPIRED', 200);
+            return response('Invalid One Time Pin', 200);
 
         }
     }
