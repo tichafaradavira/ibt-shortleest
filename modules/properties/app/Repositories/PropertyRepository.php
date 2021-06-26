@@ -14,6 +14,11 @@ class PropertyRepository
             ->where('user_id', $realtor->id)
             ->with(['client']);
 
+        if($client = Arr::get($browse_inputs,'client'))
+        {
+            $query->where('client_id',$client);
+        }
+
         $properties = $query->paginate(15);
 
         return $properties;

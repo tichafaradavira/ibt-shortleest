@@ -13,7 +13,19 @@ class ApplicationRepository
     public static function browse($browse_inputs, $realtor)
     {
         $query = Application::query()
-            ->where('user_id', $realtor->id);
+            ->with(['vacancy'])
+            ->where('applications.user_id', $realtor->id);
+
+        if($application_status = Arr::get($browse_inputs,'application_status')){
+            $query->where('applications.status',$application_status);
+        }
+
+        if($vacancy = Arr::get($browse_inputs,'vacancy')){
+            $query->join('vacancies','applications.vacancy_id','=','vacancies.id')
+                ->where('applications.vacancy_id',$vacancy);
+        }
+
+
 
         $properties = $query->paginate(15);
 
@@ -52,9 +64,13 @@ class ApplicationRepository
 
     }
 
-    function edit($data, $application)
+    function editStatus($data, $application)
     {
-        $application->fill($data);
+        if($status = Arr::get($data,'status'))
+        {
+           $application->status = $status;
+        }
+
         if ($application->save()) {
             return $application;
         } else {

@@ -27,6 +27,8 @@ class Application extends JsonResource
             'dob' => $this->dob,
             'national_id' => $this->national_id,
             'gender' => $this->gender,
+            'status' => $this->status,
+            'application_status' => $this->application_status,
 
             'mobile_number' => $this->mobile_number,
             'home_number' => $this->home_number,

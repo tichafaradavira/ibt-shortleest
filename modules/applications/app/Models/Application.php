@@ -14,6 +14,11 @@ class Application extends Model
     use SoftDeletes;
     use HasFactory;
 
+    const STATUS_PENDING = 1;
+    const STATUS_SHORTLISTED = 2;
+    const STATUS_APPROVED = 3;
+    const STATUS_NOT_APPROVED = 4;
+
     protected $table = "applications";
 
     /**
@@ -69,6 +74,7 @@ class Application extends Model
         'reason_for_moving',
         'is_smoker',
         'has_pets',
+        'status',
 
         'references',
         'next_of_kin',
@@ -124,6 +130,7 @@ class Application extends Model
         'reason_for_moving',
         'is_smoker',
         'has_pets',
+        'status',
 
         'references',
         'expenses',
@@ -161,6 +168,22 @@ class Application extends Model
     public function vacancy()
     {
         return $this->belongsTo(Vacancy::class, 'vacancy_id');
+    }
+
+    public function getApplicationStatusAttribute()
+    {
+        switch ($this->status){
+            case static::STATUS_PENDING:
+                return 'Pending';
+            case static::STATUS_SHORTLISTED :
+                return 'Shortlisted';
+            case static::STATUS_APPROVED :
+                return 'Approved';
+            case static::STATUS_NOT_APPROVED  :
+                return 'Not Approved';
+            default:
+                return '--:--';
+        }
     }
 
 

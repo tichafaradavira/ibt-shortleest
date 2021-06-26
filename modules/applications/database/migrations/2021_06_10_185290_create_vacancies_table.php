@@ -15,6 +15,7 @@ class CreateVacanciesTable extends Migration
     {
         Schema::create('vacancies', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('reference');
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('property_id');
             $table->integer('status')->default(1);
