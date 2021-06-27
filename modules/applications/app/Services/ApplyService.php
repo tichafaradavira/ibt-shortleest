@@ -37,7 +37,7 @@ class ApplyService
     {
         $vacancy = Vacancy::query()->where('user_id',$realtor->id)
             ->where('token',$token)
-            ->where('status', 1)
+            ->where('status', Vacancy::STATUS_ACTIVE)
             ->with('property')
             ->first();
 
