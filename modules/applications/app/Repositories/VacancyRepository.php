@@ -41,7 +41,7 @@ class VacancyRepository
 
         $data['available_from'] = Carbon::parse(Arr::get($data,'available_from'));
         $data['token'] = $token;
-        $data['link'] = url("/apply/$realtor->id/".$token);
+        $data['link'] = url("/#/apply/$realtor->id/".$token);
         $vacancy->fill($data);
         $vacancy->realtor()->associate($realtor);
 
