@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-
+use \Modules\Applications\Models\Application;
 class CreateApplicationsTable extends Migration
 {
     /**
@@ -18,7 +18,7 @@ class CreateApplicationsTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('property_id');
             $table->unsignedBigInteger('vacancy_id');
-            $table->unsignedBigInteger('status');
+            $table->unsignedBigInteger('status')->default(Application::STATUS_PENDING);
 
             $table->string('first_name');
             $table->string('middle_name')->nullable();
