@@ -26,7 +26,7 @@ class ApplicationRepository
         }
 
 
-        $query->orderByDesc('created_at');
+        $query->orderByDesc('applications.created_at');
         $properties = $query->paginate(15);
 
         return $properties;
