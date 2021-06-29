@@ -19,6 +19,7 @@ class PropertyRepository
             $query->where('client_id',$client);
         }
 
+        $query->orderByDesc('created_at');
         $properties = $query->paginate(15);
 
         return $properties;

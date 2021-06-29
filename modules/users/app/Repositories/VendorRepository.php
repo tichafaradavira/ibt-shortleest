@@ -19,6 +19,7 @@ class VendorRepository
     {
         $query = User::query();
 
+        $query->orderByDesc('created_at');
         $vendors = $query->paginate(15);
 
         return $vendors;

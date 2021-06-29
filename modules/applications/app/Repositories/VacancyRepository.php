@@ -16,6 +16,7 @@ class VacancyRepository
             ->with(['property'])
             ->where('user_id', $realtor->id);
 
+        $query->orderByDesc('created_at');
         $properties = $query->paginate(15);
 
         return $properties;
