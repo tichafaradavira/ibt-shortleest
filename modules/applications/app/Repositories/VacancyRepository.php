@@ -5,6 +5,7 @@ namespace Modules\Applications\Repositories;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
+use Modules\Applications\Models\Application;
 use Modules\Applications\Models\Vacancy;
 use Modules\Properties\Models\Property;
 
@@ -16,7 +17,7 @@ class VacancyRepository
             ->with(['property'])
             ->where('user_id', $realtor->id);
 
-        $query->orderByDesc('created_at');
+        $query->orderByDesc('vacancies.created_at');
         $properties = $query->paginate(15);
 
         return $properties;
@@ -42,7 +43,7 @@ class VacancyRepository
 
         $data['available_from'] = Carbon::parse(Arr::get($data,'available_from'));
         $data['token'] = $token;
-        $data['link'] = url("/#/apply/$realtor->id/".$token);
+        $data['link'] = "/apply/$realtor->id/".$token;
         $vacancy->fill($data);
         $vacancy->realtor()->associate($realtor);
 
@@ -58,6 +59,7 @@ class VacancyRepository
 
     function edit($data, $vacancy)
     {
+        $data['available_from'] = Carbon::parse(Arr::get($data,'available_from'));
         $vacancy->fill($data);
         if ($vacancy->save()) {
             return $vacancy;
@@ -108,6 +110,25 @@ class VacancyRepository
             return false;
         }
     }
+
+
+    public function getVacancyProperty($property,$realtor){
+            $property = Vacancy::query()->where('property_id',$property)
+                ->where('user_id',$realtor->id)
+                ->where('status','!=',\Modules\Applications\Models\Vacancy::STATUS_EXPIRED)
+                ->first();
+
+            if($property)
+            {
+                return $property;
+            }else{
+                return false;
+            }
+    }
+
+
+
+
 
 
 
