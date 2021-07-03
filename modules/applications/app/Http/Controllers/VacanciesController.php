@@ -4,13 +4,16 @@ namespace Modules\Applications\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 use Modules\Applications\Http\Requests\Vacancy\AddVacancyRequest;
 use Modules\Applications\Http\Requests\Vacancy\DeleteVacancyRequest;
 use Modules\Applications\Http\Requests\Vacancy\EditVacancyRequest;
 use Modules\Applications\Http\Requests\Vacancy\ReadVacancyRequest;
 use Modules\Applications\Http\Resources\Vacancy;
 use Modules\Applications\Http\Resources\VacancyCollection;
+use Modules\Applications\Repositories\VacancyRepository;
 use Modules\Applications\Services\VacancyService;
+use Modules\Properties\Models\Property;
 
 class VacanciesController extends Controller
 {
@@ -26,9 +29,19 @@ class VacanciesController extends Controller
 
     }
 
-    function add(AddVacancyRequest $request, VacancyService $service)
+    function add(AddVacancyRequest $request, VacancyService $service, VacancyRepository $repository)
     {
         $inputs = $request->all();
+
+        if($property_id = Arr::get($inputs,'property')){
+            $property = $repository->getVacancyProperty($property_id,auth()->guard('api')->user());
+
+            if($property){
+                return response('Vacancy not created.There is already a vacancy for selected property(either pending or active).', 401);
+
+            }
+
+        }
 
         $vacancy = $service->add($inputs);
         if ($vacancy) {

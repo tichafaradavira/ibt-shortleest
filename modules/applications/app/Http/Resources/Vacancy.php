@@ -25,7 +25,7 @@ class Vacancy extends JsonResource
             'vacancy_status' => $this->vacancy_status,
             'token' => $this->token,
             'reference' => $this->reference,
-            'link' => $this->link,
+            'link' => config('app.spa_url').$this->link,
             'available_from' => $this->available_from->format('d-m-Y'),
             'created_at'=> $this->created_at,
 
