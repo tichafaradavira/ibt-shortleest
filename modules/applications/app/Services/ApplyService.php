@@ -17,11 +17,8 @@ class ApplyService
         $this->repository = $repository;
     }
 
-    function add($inputs,$realtor,$token)
+    function add($inputs,$vacancy)
     {
-        $vacancy = Vacancy::query()->where('user_id',$realtor->id)
-            ->where('token',$token)
-            ->first();
 
         $application = $this->repository->apply($inputs,$vacancy);
 

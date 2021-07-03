@@ -27,7 +27,7 @@ class EditVacancyRequest extends FormRequest
             'property' => 'required',
             'reference' => 'required',
             'status' => 'numeric',
-            'available_from' => '',
+//            'available_from' => '',
         ];
     }
 

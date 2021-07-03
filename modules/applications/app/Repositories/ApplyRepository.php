@@ -31,4 +31,18 @@ class ApplyRepository
         }
 
     }
+
+
+    public function hasAppliedBefore($email,$vacancy){
+        $property = Application::query()->where('email',$email)
+            ->where('vacancy_id',$vacancy->id)
+            ->first();
+
+        if($property)
+        {
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
