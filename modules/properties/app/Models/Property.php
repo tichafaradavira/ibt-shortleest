@@ -28,6 +28,7 @@ class Property extends Model
      */
     protected $fillable = [
         'id',
+        'uuid',
         'type',
         'area',
         'rental_price',
