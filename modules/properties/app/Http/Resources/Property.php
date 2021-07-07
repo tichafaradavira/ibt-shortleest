@@ -3,6 +3,7 @@
 namespace Modules\Properties\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
+use Modules\Applications\Http\Resources\Vacancy;
 
 class Property extends JsonResource
 {
@@ -19,12 +20,14 @@ class Property extends JsonResource
 
         return [
             'id' => $this->id,
+            'uuid' => $this->uuid,
             'property_type' => $this->property_type,
             'type' => $this->type,
             'area' => $this->area,
             'rental_price' => $this->rental_price,
             'description' => $this->description,
             'client' => new Client($this->whenLoaded('client')),
+            'vacancy' => new Vacancy($this->whenLoaded('vacancy')),
             'physical_address_street' => $this->physical_address_street,
             'physical_address_city' => $this->physical_address_city,
             'physical_address_surburb' =>  $this->physical_address_surburb,

@@ -90,7 +90,7 @@ class Vacancy extends Model
             case static::STATUS_EXPIRED:
                 return 'Expired';
             default:
-                return 'Inactive';
+                return 'NULL';
         }
     }
 
