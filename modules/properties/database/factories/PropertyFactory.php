@@ -3,6 +3,7 @@ namespace Modules\Properties\Database\Factories;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 use Modules\Properties\Models\Property;
 
 class PropertyFactory extends Factory
@@ -22,6 +23,7 @@ class PropertyFactory extends Factory
     public function definition()
     {
         return [
+            'uuid' => Str::uuid()->toString(),
             'type' => $this->faker->numberBetween(1,3),
             'rental_price' => $this->faker->numberBetween(1000,5000),
             'area' =>  $this->faker->numberBetween(10,100),

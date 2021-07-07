@@ -5,6 +5,7 @@ namespace Modules\Properties\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Modules\Applications\Models\Vacancy;
 use Modules\Properties\Database\Factories\PropertyFactory;
 use Modules\Users\Models\User;
 
@@ -27,10 +28,10 @@ class Property extends Model
      */
     protected $fillable = [
         'id',
-        'type' ,
-        'area' ,
+        'type',
+        'area',
         'rental_price',
-        'description' ,
+        'description',
         'physical_address_street',
         'physical_address_city',
         'physical_address_surburb',
@@ -48,8 +49,8 @@ class Property extends Model
      * @var array
      */
     protected $visible = [
-        'type' ,
-        'area' ,
+        'type',
+        'area',
         'rental_price',
         'description',
         'physical_address_street',
@@ -75,23 +76,42 @@ class Property extends Model
     ];
 
 
+    /**
+     * @return PropertyFactory
+     */
     protected static function newFactory()
     {
         return PropertyFactory::new();
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
     public function realtor()
     {
         return $this->belongsTo(User::class, 'user_id');
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
     public function client()
     {
         return $this->belongsTo(Client::class, 'client_id');
     }
 
-    function getPropertyTypeAttribute(){
-        switch ($this->type){
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function vacancy()
+    {
+        return $this->hasOne(Vacancy::class, 'property_id')
+            ->where('status', '!=', Vacancy::STATUS_EXPIRED);
+    }
+
+    function getPropertyTypeAttribute()
+    {
+        switch ($this->type) {
             case static::TYPE_RESIDENTIAL:
                 return 'Residential';
             case static::TYPE_INDUSTRIAL:
