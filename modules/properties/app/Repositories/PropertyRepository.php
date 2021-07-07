@@ -3,6 +3,7 @@
 namespace Modules\Properties\Repositories;
 
 use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
 use Modules\Properties\Models\Client;
 use Modules\Properties\Models\Property;
 
@@ -28,8 +29,7 @@ class PropertyRepository
 
     function add($data, $realtor)
     {
-
-
+        $data['uuid'] = Str::uuid()->toString();
         $property = new Property();
         if ($client_id = Arr::get($data, 'client')) {
             if ($client = Client::find($client_id)) {
@@ -63,7 +63,7 @@ class PropertyRepository
         $property = Property::query()
             ->where('id', $id)
             ->where('user_id', $realtor->id)
-            ->with(['client'])
+            ->with(['client','vacancy'])
             ->first();
 
         if ($property) {

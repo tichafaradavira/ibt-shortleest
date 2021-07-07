@@ -28,7 +28,7 @@ class VacanciesSeeder extends Seeder
                     'user_id' => $property->realtor->id,
                     'property_id' => $property->id,
                     'token' => $token,
-                    'link' =>  url("/apply/".$property->realtor->id."/".$token),
+                    'link' =>  "/apply/".$property->realtor->id."/".$token,
                 ]);
 
         }

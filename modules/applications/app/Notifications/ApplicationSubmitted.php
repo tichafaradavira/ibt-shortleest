@@ -6,19 +6,22 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
+use Modules\Applications\Models\Application;
+use Modules\Applications\Models\Vacancy;
 
 class ApplicationSubmitted extends Notification
 {
     use Queueable;
+    private  $application;
 
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(Application $application)
     {
-        //
+        $this->application = $application;
     }
 
     /**
@@ -43,6 +46,7 @@ class ApplicationSubmitted extends Notification
         return (new MailMessage)
             ->from('admin@shortleest.com')
             ->line('An application has been submitted')
+            ->action("View Application",config('app.spa_url').'/account/application/'.$this->application->id)
             ->line('Thank you for using our application!');
     }
 
