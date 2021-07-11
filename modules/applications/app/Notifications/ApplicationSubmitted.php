@@ -9,7 +9,7 @@ use Illuminate\Notifications\Notification;
 use Modules\Applications\Models\Application;
 use Modules\Applications\Models\Vacancy;
 
-class ApplicationSubmitted extends Notification
+class ApplicationSubmitted extends Notification  implements ShouldQueue
 {
     use Queueable;
     private  $application;
@@ -46,7 +46,7 @@ class ApplicationSubmitted extends Notification
         return (new MailMessage)
             ->from('admin@shortleest.com')
             ->line('An application has been submitted')
-            ->action("View Application",config('app.spa_url').'/account/application/'.$this->application->id)
+            ->action("View Application",config('app.url').'/account/application/'.$this->application->id)
             ->line('Thank you for using our application!');
     }
 
