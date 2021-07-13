@@ -15,9 +15,8 @@ class Vacancy extends Model
     use SoftDeletes;
     use HasFactory;
 
-    const STATUS_PENDING = 1;
-    const STATUS_ACTIVE = 2;
-    const STATUS_EXPIRED = 3;
+    const STATUS_ACTIVE = 1;
+    const STATUS_EXPIRED = 2;
 
     protected $table = "vacancies";
 
@@ -83,8 +82,6 @@ class Vacancy extends Model
 
     function getVacancyStatusAttribute(){
         switch ($this->status){
-            case static::STATUS_PENDING:
-                return 'Pending';
             case static::STATUS_ACTIVE:
                 return 'Active';
             case static::STATUS_EXPIRED:

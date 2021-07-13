@@ -60,6 +60,8 @@ class VacancyRepository
     function edit($data, $vacancy)
     {
         $data['available_from'] = Carbon::parse(Arr::get($data,'available_from'));
+        $data = Arr::except($data, ['reference']);
+
         $vacancy->fill($data);
         if ($vacancy->save()) {
             return $vacancy;
