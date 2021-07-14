@@ -29,7 +29,7 @@ class SendForgotPasswordEmail extends Mailable
      */
     public function build()
     {
-        return $this->from('admin@kennaridesk.com')
+        return $this->from('accounts@shortleest.com')
         ->with([
             'user' =>$this->user,
         ])
