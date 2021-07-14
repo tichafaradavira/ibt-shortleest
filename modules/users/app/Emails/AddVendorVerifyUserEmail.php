@@ -31,7 +31,7 @@ class  AddVendorVerifyUserEmail extends Mailable
      */
     public function build()
     {
-        return $this->from('admin@ibtvendor.com')
+        return $this->from('accounts@shortleest.com')
         ->with([
             'user' =>$this->user,
             'temporary_password' => $this->temporary_password
