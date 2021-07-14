@@ -28,10 +28,10 @@ class UserController extends Controller
             $user = $service->signup($inputs);
             $token = $user->createToken('Laravel Password Grant Client')->accessToken;
 
-            return response('VERIFY_EMAIL', 200);
+            return response('Verify your email', 200);
 
         } else {
-            return response('EMAIL_TAKEN', 401);
+            return response('Email already in use', 401);
 
         }
 
@@ -44,21 +44,21 @@ class UserController extends Controller
 
         if ($user) {
             if ($user->suspended_at != null) {
-                return response("ACCOUNT_SUSPENDED", 503);
+                return response("Account suspended", 503);
             }
 
             if ($user->email_verified_at == null) {
-                return response("VERIFY_EMAIL", 200);
+                return response("Please verify your email", 401);
             }
 
             if (Hash::check($inputs['password'], $user->password)) {
                 $token = $user->createToken('Laravel Password Grant Client')->accessToken;
                 return response(['user' => new UserResource($user), 'token' => $token], 200);
             } else {
-                return response("INVALID_CREDENTIALS", 401);
+                return response("Invalid credentials", 401);
             }
         } else {
-            return response('INVALID_CREDENTIALS', 401);
+            return response('Invalid credentials', 401);
         }
     }
 
@@ -69,9 +69,9 @@ class UserController extends Controller
         $inputs = $request->all();
         $user = $service->verifyEmail($inputs);
         if ($user) {
-            return response('EMAIL_VERIFIED', 200);
+            return response('Email verified', 200);
         } else {
-            return response('INVALID_PASSWORD', 401);
+            return response('Invalid password', 401);
 
         }
     }
@@ -101,9 +101,9 @@ class UserController extends Controller
 
         $result = $service->forgotPassword($user);
         if ($result) {
-            return response('PASSWORD_RESET_EMAIL_SEND', 200);
+            return response('Password reset email sent', 401);
         } else {
-            return response('Invalid One Time Pin', 200);
+            return response('Invalid One Time Pin', 401);
 
         }
     }
