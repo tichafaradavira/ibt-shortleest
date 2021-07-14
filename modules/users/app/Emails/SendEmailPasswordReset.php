@@ -30,7 +30,7 @@ class SendEmailPasswordReset extends Mailable
      */
     public function build()
     {
-        return $this->from('admin@ibttutor.com')
+        return $this->from('accounts@shortleest.com')
         ->with([
             'student' =>$this->student
         ])

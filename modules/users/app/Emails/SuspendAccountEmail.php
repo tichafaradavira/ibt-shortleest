@@ -31,7 +31,7 @@ class  SuspendAccountEmail extends Mailable
      */
     public function build()
     {
-        return $this->from('admin@ibttutor.com')
+        return $this->from('accounts@shortleest.com')
         ->with([
             'user' =>$this->user,
             'message' =>$this->message,
