@@ -29,7 +29,7 @@ class SendEmailVerifyUserEmail extends Mailable
      */
     public function build()
     {
-        return $this->from('admin@realtorparc.com')
+        return $this->from('accounts@shortleest.com')
         ->with([
             'user' =>$this->user,
         ])
