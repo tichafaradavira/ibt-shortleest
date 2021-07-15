@@ -4,6 +4,7 @@ namespace Modules\Properties\Repositories;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
+use Modules\Applications\Models\Vacancy;
 use Modules\Properties\Models\Client;
 use Modules\Properties\Models\Property;
 
@@ -79,6 +80,8 @@ class PropertyRepository
             ->where('id', $id)
             ->where('user_id', $realtor->id)
             ->delete();
+
+        Vacancy::where('property_id', $id)->delete();
 
         if ($result) {
             return $result;

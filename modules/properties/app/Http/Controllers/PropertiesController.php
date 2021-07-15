@@ -63,6 +63,12 @@ class PropertiesController extends Controller
 
     function delete(DeletePropertyRequest $request, PropertyService $service, $entity)
     {
+        if($service->hasActiveVacancy($entity))
+        {
+            return response('Cannot delete property with an active vacancy.', 422);
+
+        }
+
         $result = $service->delete($entity);
         if ($result) {
             return response($result, 200);

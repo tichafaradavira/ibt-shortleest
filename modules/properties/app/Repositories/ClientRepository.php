@@ -4,6 +4,7 @@ namespace Modules\Properties\Repositories;
 
 use Illuminate\Support\Arr;
 use Modules\Properties\Models\Client;
+use Modules\Properties\Models\Property;
 
 class ClientRepository
 {
@@ -78,6 +79,9 @@ class ClientRepository
             ->where('id', $id)
             ->where('user_id', $realtor->id)
             ->delete();
+
+        Property::where('client_id', $id)
+            ->update(['client_id' => null]);
 
         if ($result) {
             return $result;

@@ -2,6 +2,7 @@
 
 namespace Modules\Properties\Services;
 
+use Modules\Applications\Models\Vacancy;
 use Modules\Properties\Models\Property;
 use Modules\Properties\Repositories\PropertyRepository;
 
@@ -66,6 +67,9 @@ class PropertyService
 
     function delete($id)
     {
+
+
+
         if ($id) {
             $property = $this->repository->delete($id, $this->realtor);
             return $property;
@@ -82,6 +86,15 @@ class PropertyService
         } else {
             return false;
         }
+    }
+
+    function hasActiveVacancy($id)
+    {
+        $vacancy = Vacancy::where('property_id', $id)
+            ->where('status', Vacancy::STATUS_ACTIVE)
+            ->first();
+
+        return $vacancy;
     }
 
 
