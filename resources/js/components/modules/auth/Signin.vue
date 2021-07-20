@@ -98,8 +98,8 @@ export default {
   data() {
     return {
       user: {
-        email: "realtor1@gmail.com",
-        password: "test12345"
+        email: "",
+        password: ""
       },
       errorMessage: "",
       message: "",
