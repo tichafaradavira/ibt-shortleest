@@ -65,7 +65,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="First Name"
                           placeholder="First Name"
                           :error-messages="errors[0]"
@@ -83,7 +83,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Last Name"
                           placeholder="Last Name"
                           :error-messages="errors[0]"
@@ -104,7 +104,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Nationality"
                           placeholder="Nationality"
                           :error-messages="errors[0]"
@@ -122,7 +122,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Citizenship"
                           placeholder="Citizenship"
                           :error-messages="errors[0]"
@@ -143,7 +143,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Date of birth"
                           placeholder="Date of birth"
                           :error-messages="errors[0]"
@@ -161,7 +161,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="National ID"
                           placeholder="Citizenship"
                           :error-messages="errors[0]"
@@ -182,7 +182,7 @@
                       <v-select
                           class="text-select"
                           :items="gender"
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           v-model="application.gender"
                           :error-messages="errors[0]"
                           item-text="text"
@@ -212,7 +212,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Mobile Number"
                           placeholder="Mobile number"
                           :error-messages="errors[0]"
@@ -267,7 +267,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Email"
                           placeholder="Email"
                           v-model="application.email"
@@ -314,7 +314,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Street address"
                           placeholder="Street address"
                           :error-messages="errors[0]"
@@ -332,7 +332,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Suburb"
                           placeholder="Suburb"
                           :error-messages="errors[0]"
@@ -353,7 +353,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="City"
                           placeholder="City"
                           v-model="application.physical_address_city"
@@ -372,7 +372,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Post code"
                           placeholder="Post code"
                           :error-messages="errors[0]"
@@ -416,7 +416,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Street address"
                           placeholder="Street address"
                           :error-messages="errors[0]"
@@ -434,7 +434,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Suburb"
                           placeholder="Suburb"
                           :error-messages="errors[0]"
@@ -455,7 +455,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="CIty"
                           placeholder="City"
                           :error-messages="errors[0]"
@@ -474,7 +474,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Post code"
                           placeholder="Post code"
                           :error-messages="errors[0]"
@@ -500,7 +500,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Employment Status"
                           placeholder="Employment Status"
                           :error-messages="errors[0]"
@@ -518,7 +518,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Employer name"
                           placeholder="Employer name"
                           :error-messages="errors[0]"
@@ -539,7 +539,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Employer phone"
                           placeholder="Employer phone"
                           :error-messages="errors[0]"
@@ -557,7 +557,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Employer Email"
                           placeholder="Email"
                           :error-messages="errors[0]"
@@ -578,7 +578,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Gross salary"
                           placeholder="Gross salary"
                           :error-messages="errors[0]"
@@ -596,7 +596,7 @@
                       <v-textarea
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Employer address"
                           placeholder="Employer address"
                           :error-messages="errors[0]"
@@ -621,7 +621,7 @@
                           class="text-input"
                           type="number"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Number of dependants"
                           placeholder="Number of dependants"
                           v-model="application.dependants"
@@ -638,7 +638,7 @@
                       <v-textarea
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Reason for moving"
                           placeholder="Reason for moving"
                           :error-messages="errors[0]"
@@ -693,7 +693,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Next of kin name"
                           placeholder="Next of kin name"
                           :error-messages="errors[0]"
@@ -711,7 +711,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Next of kin email"
                           placeholder="Next of kin email"
                           :error-messages="errors[0]"
@@ -731,7 +731,7 @@
                       <v-text-field
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Next of kin phone"
                           placeholder="Next of kin phone"
                           :error-messages="errors[0]"
@@ -749,7 +749,7 @@
                       <v-textarea
                           class="text-input"
                           outlined
-                          :error="errors[0]"
+                          :error="errors[0] !== undefined"
                           label="Next of kin address"
                           placeholder="Next of kin address"
                           :error-messages="errors[0]"
@@ -781,7 +781,7 @@
                         <v-text-field
                             class="text-input"
                             outlined
-                            :error="errors[0]"
+                            :error="errors[0] !== undefined"
                             label="Reference's name"
                             placeholder="Reference's name"
                             :error-messages="errors[0]"
@@ -799,7 +799,7 @@
                         <v-text-field
                             class="text-input"
                             outlined
-                            :error="errors[0]"
+                            :error="errors[0] !== undefined"
                             label="Reference email"
                             placeholder="Reference email"
                             :error-messages="errors[0]"
@@ -819,7 +819,7 @@
                         <v-text-field
                             class="text-input"
                             outlined
-                            :error="errors[0]"
+                            :error="errors[0] !== undefined"
                             label="Reference phone"
                             placeholder="Reference phone"
                             :error-messages="errors[0]"
@@ -837,7 +837,7 @@
                         <v-textarea
                             class="text-input"
                             outlined
-                            :error="errors[0]"
+                            :error="errors[0] !== undefined"
                             label="Reference address"
                             placeholder="Reference address"
                             :error-messages="errors[0]"
@@ -880,7 +880,7 @@
                             class="text-input"
                             dense
                             outlined
-                            :error="errors[0]"
+                            :error="errors[0] !== undefined"
                             label="Expense"
                             placeholder="Expense"
                             :error-messages="errors[0]"
@@ -899,7 +899,7 @@
                             class="text-input"
                             dense
                             outlined
-                            :error="errors[0]"
+                            :error="errors[0] !== undefined"
                             label="Cost"
                             placeholder="$0.0"
                             v-model="application.expenses[index].cost"

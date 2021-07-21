@@ -59,7 +59,7 @@
 
                   <v-card-text>
                     Beta mode is a testing mode, which allows us to get feedback from you in a safe way.This helps us with improving the product(BEFORE AYONE PAYS FOR THE SERVICE). While its highly unlikely, you might encounter some problems while using the application.The good thing is you are not charged anything when the application still in beta mode.
-                    If you encounter any issues, or if you have any queries, suggestions, etc please contact <a>admin@shortleest.com</a>
+                    If you encounter any issues, or if you have any queries, suggestions, etc please contact <a>enquiries@shortleest.com</a>
                   </v-card-text>
 
                   <v-divider></v-divider>
@@ -305,16 +305,16 @@
             class="blue  white--text text-center"
         >
           <v-card-text>
-            <v-btn
-                v-for="icon in icons"
-                :key="icon"
-                class="mx-4 white--text"
-                icon
-            >
-              <v-icon size="24px">
-                {{ icon }}
-              </v-icon>
-            </v-btn>
+<!--            <v-btn-->
+<!--                v-for="icon in icons"-->
+<!--                :key="icon"-->
+<!--                class="mx-4 white&#45;&#45;text"-->
+<!--                icon-->
+<!--            >-->
+<!--              <v-icon size="24px">-->
+<!--                {{ icon }}-->
+<!--              </v-icon>-->
+<!--            </v-btn>-->
           </v-card-text>
 
           <v-card-text class="white--text pt-0">

@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://www.shortleest.com'),
+    'url' => env('APP_URL', 'https://www.shortleest.com'),
 
     'spa_url' => env('SPA_URL', 'http://localhost'),
 

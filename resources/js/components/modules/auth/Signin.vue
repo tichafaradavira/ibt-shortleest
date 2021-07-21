@@ -31,7 +31,7 @@
                                 dense
                                 class="text-input"
                                 outlined
-                                :error="errors[0]"
+                                :error="errors[0] !== undefined"
                                 :error-messages="errors[0]"
                                 v-model="user.email"
                                 label="Email">
@@ -41,12 +41,12 @@
                       </v-row>
                       <v-row>
                         <v-col>
-                          <ValidationProvider name="Password" rules="required" v-slot="{ errors }">
+                          <ValidationProvider lazy name="Password" rules="required" v-slot="{ errors }">
                             <v-text-field
                                 dense
                                 class="text-input"
                                 outlined
-                                :error="errors[0]"
+                                :error="errors[0] !== undefined"
                                 :error-messages="errors[0]"
                                 type="password"
                                 label="Password"
@@ -114,7 +114,6 @@ export default {
 
   methods: {
     async signinUser() {
-        console.log('Huio')
       const isValid = await this.$refs.observer.validate();
       if (isValid) {
         this.loading = true;

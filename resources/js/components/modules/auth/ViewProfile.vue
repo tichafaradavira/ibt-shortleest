@@ -44,11 +44,11 @@
               </v-col>
             </v-row>
             <v-divider></v-divider>
-            <v-row class="ma-2 pa-2">
-              <v-col cols="12">
-                <settings-details  :setting="profile.settings"></settings-details>
-              </v-col>
-            </v-row>
+<!--            <v-row class="ma-2 pa-2">-->
+<!--              <v-col cols="12">-->
+<!--                <settings-details  :setting="profile.settings"></settings-details>-->
+<!--              </v-col>-->
+<!--            </v-row>-->
 
           </v-card>
         </v-card>

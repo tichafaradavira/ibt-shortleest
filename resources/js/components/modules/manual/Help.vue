@@ -25,7 +25,7 @@
               <v-img
                   max-height="500"
                   max-width="550"
-                  :src="require('./images/property.jpg')"
+                  :src="'./images/property.jpg'"
               ></v-img>
               <v-divider></v-divider>
 
@@ -37,7 +37,7 @@
                   max-height="500"
                   max-width="550"
                   class="ma-2"
-                  :src="require('./images/create_vacancy.jpg')"
+                  :src="'./images/create_vacancy.jpg'"
               ></v-img>
               <v-divider></v-divider>
 
@@ -53,7 +53,7 @@
                   max-height="500"
                   max-width="550"
                   class="ma-2"
-                  :src="require('./images/vacancy.jpg')"
+                  :src="'./images/vacancy.jpg'"
               ></v-img>
               <v-divider></v-divider>
 
@@ -68,7 +68,7 @@
                   max-height="500"
                   max-width="550"
                   class="ma-2"
-                  :src="require('./images/vacancy_apps.jpg')"
+                  :src="'./images/vacancy_apps.jpg'"
               ></v-img>
               <v-divider></v-divider>
 
@@ -101,9 +101,7 @@ export default {
       snackMessage: "Done",
       snackColor: "#2E86C1",
     };
-  },
-  components: {},
-  computed: {},
+  }
 };
 </script>
 <style>
