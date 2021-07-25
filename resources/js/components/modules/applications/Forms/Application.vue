@@ -951,83 +951,68 @@ export default {
   data() {
     return {
       application: {
-        first_name: 'Liana',
-        middle_name: 'Bella',
-        last_name: 'Hadid',
-        nationality: 'Zimbabwean',
-        citizenship: 'Zimbabwean',
-        dob: '3-3-1991',
-        national_id: '243536363L78',
-        gender: MALE,
+        first_name: null,
+        middle_name: null,
+        last_name: null,
+        nationality: null,
+        citizenship: null,
+        dob: null,
+        national_id: null,
+        gender: null,
 
-        mobile_number: '096373733',
-        home_number: '096373333',
-        work_number: '093373733',
-        email: 'bella@gmail.com',
-        fax: '42424242424',
+        mobile_number: null,
+        home_number: null,
+        work_number: null,
+        email: null,
+        fax: null,
 
-        physical_address_street: '24 Cortney',
-        physical_address_surburb: 'Hullevile',
-        physical_address_city: 'Randburg',
-        physical_address_postcode: '3222',
+        physical_address_street: null,
+        physical_address_surburb: null,
+        physical_address_city: null,
+        physical_address_postcode: null,
         postal_equal_to_physical: false,
 
-        postal_address_street: '25 Buller',
-        postal_address_surburb: 'Koliville',
-        postal_address_city: 'Bulawayo',
-        postal_address_postcode: '88877',
+        postal_address_street: null,
+        postal_address_surburb: null,
+        postal_address_city: null,
+        postal_address_postcode: null,
 
-        next_of_kin_name: 'Dazzling',
-        next_of_kin_email: 'dazling@gmail.com',
-        next_of_kin_phone: '099939333',
-        next_of_kin_address: '23 Del avenue, Hukai lop',
+        next_of_kin_name: null,
+        next_of_kin_email: null,
+        next_of_kin_phone: null,
+        next_of_kin_address: null,
 
-        employment_status: 'Employed',
-        employer_name: 'VRED inc',
-        employer_email: 'hr@vred.com',
-        employer_phone: '0423423423',
-        employer_address: '067373737',
-        gross_salary: '636363',
+        employment_status: null,
+        employer_name: null,
+        employer_email: null,
+        employer_phone: null,
+        employer_address: null,
+        gross_salary: null,
 
-        dependants: 2,
-        reason_for_moving: '"Sed ut perspiciatis unde omnis iste natus error ' +
-            'sit voluptatem accusantium doloremque laudantium, totam rem' +
-            ' aperiam, eaque ipsa quae ab illo inventore veritatis' +
-            'et quasi architecto beatae vitae dicta sunt explicabo. ' +
-            'Nemo enim ipsam voluptatem quia voluptas sit aspernatur' +
-            ' aut odit aut fugit, sed quia consequuntur magni dolores' +
-            ' eos qui ratione voluptatem sequi nesciunt. Neque porro' +
-            ' quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ' +
-            'adipisci velit, sed quia non numquam eius modi tempora incidunt ut ' +
-            'labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima' +
-            ' veniam, quis nostrum exercitationem ullam corporis suscipit ' +
-            '\n',
+        dependants: null,
+        reason_for_moving: null,
         is_smoker: false,
         has_pets: false,
 
         references: [
           {
-            name: 'Benard',
-            email: 'bnard@gmail.com',
-            phone: '03423423',
-            address: '12 Noliut backou Loupod',
+            name: null,
+            email: null,
+            phone: null,
+            address: null,
           }
         ],
         expenses: [
           {
-            expense: 'Bacon',
-            cost: 344,
+            expense: '',
+            cost: null,
           }
         ]
       },
       gender: [
         {
-          text: 'Male',
-          value: MALE
-        },
-        {
-          text: 'Female',
-          value: FEMALE,
+          text: null,
+          value: null
         }
       ],
       errorMessage: null,
