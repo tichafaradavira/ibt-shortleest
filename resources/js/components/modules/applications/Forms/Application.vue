@@ -1004,15 +1004,19 @@ export default {
         ],
         expenses: [
           {
-            expense: '',
+            expense: null,
             cost: null,
           }
         ]
       },
       gender: [
         {
-          text: null,
-          value: null
+          text: 'Male',
+          value: MALE
+        },
+        {
+          text: 'Female',
+          value: FEMALE,
         }
       ],
       errorMessage: null,
