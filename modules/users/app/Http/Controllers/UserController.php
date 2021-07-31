@@ -128,6 +128,23 @@ class UserController extends Controller
         return response(new UserResource($user), 200);
     }
 
+    protected function deactivate(Request $request, UserService $service)
+    {
+        $user = $request->user();
+
+        $user = $service->deactivate($user);
+        $user->token()->revoke();
+
+        if($user){
+            return response('Account deactivated!',  200);
+
+        }else{
+            return response( "Account not deactivated", 422);
+
+        }
+    }
+
+
     /**
      * @param EditRealtorRequest $request
      * @param UserService $service

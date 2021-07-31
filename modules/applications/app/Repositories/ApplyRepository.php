@@ -12,6 +12,11 @@ use Modules\Properties\Models\Property;
 class ApplyRepository
 {
 
+    /**
+     * @param $data
+     * @param $vacancy
+     * @return false|Application
+     */
     function apply($data, $vacancy)
     {
 
@@ -32,7 +37,11 @@ class ApplyRepository
 
     }
 
-
+    /**
+     * @param $email
+     * @param $vacancy
+     * @return bool
+     */
     public function hasAppliedBefore($email,$vacancy){
         $property = Application::query()->where('email',$email)
             ->where('vacancy_id',$vacancy->id)

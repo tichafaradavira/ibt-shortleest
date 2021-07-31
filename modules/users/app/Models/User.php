@@ -32,6 +32,7 @@ class User extends Authenticatable
         'otp' ,
         'settings',
         'otp_expires_at' ,
+        'deactivated_at' ,
         'phone_number',
         'password',
         'recovery_token',
@@ -55,7 +56,8 @@ class User extends Authenticatable
         'language',
         'phone_number',
         'recovery_token',
-        'suspended_at'
+        'suspended_at',
+        'deactivated_at' ,
     ];
 
     /**
@@ -67,6 +69,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'suspended_at' => 'datetime',
         'otp_verified_at' => 'datetime',
+        'deactivated_at' => 'datetime',
         'settings' => 'array',
     ];
 

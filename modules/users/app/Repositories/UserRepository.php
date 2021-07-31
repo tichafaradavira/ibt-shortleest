@@ -16,6 +16,10 @@ class UserRepository
 {
 
 
+    /**
+     * @param $data
+     * @return false
+     */
     function signup($data)
     {
         if ($password = Arr::get($data, 'password')) {
@@ -39,6 +43,10 @@ class UserRepository
 
     }
 
+    /**
+     * @param $user
+     * @return bool
+     */
     function forgotPassword($user)
     {
         $user->otp = $this->generateOtp();
@@ -52,6 +60,11 @@ class UserRepository
     }
 
 
+    /**
+     * @param $data
+     * @param $user
+     * @return bool
+     */
     function resetPassword($data, $user)
     {
         if ($user->otp_expires_at > Carbon::now()) {
@@ -67,6 +80,11 @@ class UserRepository
     }
 
 
+    /**
+     * @param $data
+     * @param $user
+     * @return false
+     */
     function verifyEmail($data, $user)
     {
         if ($otp = Arr::get($data, 'otp')) {
@@ -105,6 +123,9 @@ class UserRepository
 
     }
 
+    /**
+     * @return int
+     */
     public function generateOtp()
     {
         return rand(10000, 99999);

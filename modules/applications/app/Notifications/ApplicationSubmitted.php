@@ -44,9 +44,9 @@ class ApplicationSubmitted extends Notification  implements ShouldQueue
     public function toMail($notifiable)
     {
         return (new MailMessage)
-            ->from('admin@shortleest.com')
+            ->from('accounts@shortleest.com', 'Accounts')
             ->line('An application has been submitted')
-            ->action("View Application",config('app.url').'/account/application/'.$this->application->id)
+            ->action("View Application",url('/account/application/'.$this->application->id))
             ->line('Thank you for using our application!');
     }
 

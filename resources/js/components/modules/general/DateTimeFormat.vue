@@ -1,12 +1,12 @@
 <template>
-    <span class="font-weight-bold">{{moment(this.dateTime).format("DD/MM/YYYY, h:mm:ss")}}</span>
+    <span class="font-weight-bold">{{moment(this.value).format("DD/MM/YYYY, h:mm:ss")}}</span>
 </template>
 
 <script>
 import moment from 'moment/moment'
 export default {
   props: {
-    dateTime: {
+    value: {
       type: String,
       required: true
     }

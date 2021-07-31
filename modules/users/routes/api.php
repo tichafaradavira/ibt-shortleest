@@ -14,4 +14,5 @@ Route::post('/users/password/reset', [UserController::class, 'resetPassword'])->
 Route::post('/users/logout', [UserController::class, 'logout'])->name('modules.users.logout')->middleware('auth:api');
 Route::get('/users/realtor/profile', [UserController::class, 'profile'])->name('modules.users.realtor.profile')->middleware('auth:api');
 Route::post('/users/realtor/edit/profile', [UserController::class, 'editProfile'])->name('modules.users.realtor.edit.profile')->middleware('auth:api');
+Route::post('/users/realtor/deactivate', [UserController::class, 'deactivate'])->name('modules.users.realtor.deactivate.profile')->middleware('auth:api');
 

@@ -3,6 +3,7 @@
 namespace Modules\Users\Services;
 
 
+use Carbon\Carbon;
 use Illuminate\Support\Arr;
 use Modules\Users\Models\User;
 use Modules\Users\Repositories\UserRepository;
@@ -87,6 +88,19 @@ class UserService
     function updateProfile($data,$user)
     {
         $user = $this->repository->updateProfile($data, $user);
+
+        if ($user) {
+            return $user;
+
+        } else {
+            return null;
+        }
+    }
+
+    function deactivate(User $user)
+    {
+        $user->deactivated_at = Carbon::now();
+        $user->save();
 
         if ($user) {
             return $user;

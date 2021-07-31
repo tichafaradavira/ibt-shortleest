@@ -10,6 +10,11 @@ use Modules\Properties\Models\Property;
 
 class ApplicationRepository
 {
+    /**
+     * @param $browse_inputs
+     * @param $realtor
+     * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
+     */
     public static function browse($browse_inputs, $realtor)
     {
         $query = Application::query()
@@ -33,6 +38,11 @@ class ApplicationRepository
     }
 
 
+    /**
+     * @param $data
+     * @param $realtor
+     * @return false|Application
+     */
     function add($data, $realtor)
     {
 
@@ -64,6 +74,11 @@ class ApplicationRepository
 
     }
 
+    /**
+     * @param $data
+     * @param $application
+     * @return false
+     */
     function editStatus($data, $application)
     {
         if($status = Arr::get($data,'status'))
@@ -78,6 +93,11 @@ class ApplicationRepository
         }
     }
 
+    /**
+     * @param $id
+     * @param $realtor
+     * @return false|\Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Model|object
+     */
     function read($id, $realtor)
     {
         $application = Application::query()
@@ -93,6 +113,11 @@ class ApplicationRepository
         }
     }
 
+    /**
+     * @param $id
+     * @param $realtor
+     * @return false|mixed
+     */
     function delete($id, $realtor)
     {
         $result = Application::query()
@@ -107,6 +132,12 @@ class ApplicationRepository
         }
     }
 
+
+    /**
+     * @param $id
+     * @param $realtor
+     * @return bool
+     */
     function restore($id, $realtor)
     {
         $result = Application::withTrashed()

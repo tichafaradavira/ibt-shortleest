@@ -30,6 +30,7 @@ class CreateUsersTable extends Migration
             $table->dateTime('otp_expires_at')->nullable();
             $table->dateTime('email_verified_at')->nullable();
             $table->dateTime('suspended_at')->nullable();
+            $table->dateTime('deactivated_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

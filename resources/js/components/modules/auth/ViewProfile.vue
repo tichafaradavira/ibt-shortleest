@@ -20,6 +20,16 @@
           <loading class="ma-4" v-if="loading" size="60"></loading>
           <v-card v-if="!loading" class="" color="#EEEEEE" outlined>
             <div class="ma-2 d-flex justify-end">
+                <v-btn
+                    class="ma-1 white--text"
+                    color="red"
+                    @click="deactivateAccount"
+                >
+                    <v-icon>
+                        mdi-close-octagon
+                    </v-icon>
+                    Deactivate Account
+                </v-btn>
               <v-btn
                   class="ma-1 white--text"
                   color="blue"
@@ -32,6 +42,18 @@
               </v-btn>
 
             </div>
+              <v-row v-if="deactivated" class="ma-2 pa-2">
+                  <v-col cols="12">
+                      <v-alert
+                          text
+                          prominent
+                          type="error"
+                          icon="mdi-cloud-alert"
+                      >
+                          Account deactivated.You can still login  to your account within 30 days.
+                      </v-alert>
+                  </v-col>
+              </v-row>
             <v-row class="ma-2 pa-2">
               <v-col cols="12">
                 <profile-details  :profile="profile"></profile-details>
@@ -66,6 +88,7 @@ export default {
   data() {
     return {
       show: false,
+      deactivated: false,
       profile: null,
       loading: true,
       loadingMessage: "Loading Profile...",
@@ -95,6 +118,28 @@ export default {
             this.loading = false;
           });
     },
+      async deactivateAccount() {
+          this.loading = true;
+          this.loadingColor = "red";
+          this.loadingMessage = "Deactivating Account";
+          let token = localStorage.getItem("token");
+          await this.$axios.post(
+              `/users/realtor/deactivate`,
+              {},
+              {
+                  headers: {Authorization: `Bearer ${token}`},
+              }
+          )
+              .then(response => {
+                  this.loading = false;
+                  this.deactivated = true;
+                  setTimeout(() => {
+                      this.$router.push({name:'home'})
+                  }, 4000)
+
+              }).finally(() => {
+              });
+      },
     resetSnackBar() {
       this.show = false;
     },
