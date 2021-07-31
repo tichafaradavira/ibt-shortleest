@@ -25,7 +25,11 @@ import Success from "./components/modules/applications/Forms/Success";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 import Help from "./components/modules/manual/Help";
 import Home from "./components/pages/Home";
+import Users from "./components/modules/admin/Users";
+import ViewUser from "./components/modules/admin/ViewUser";
+import AdminSignin from "./components/modules/admin/AdminSignin";
 import VueRouter from 'vue-router';
+import AdminAccount from "./components/layouts/AdminAccount";
 Vue.use(VueRouter)
 
 const routes = [
@@ -90,6 +94,35 @@ const routes = [
         path: '/apply/submitted',
         component: Success,
         name: 'apply-submitted'
+    },
+    {
+        path: '/admin',
+        component: Auth,
+        name: 'admin-auth',
+        children: [
+            {
+                path: 'signin',
+                component: AdminSignin,
+                name: 'admin-signin'
+            },
+            {
+                path: 'admin-account',
+                component: AdminAccount,
+                name: 'admin-account',
+                children: [
+                    {
+                        path: 'users',
+                        component: Users,
+                        name: 'users',
+                    },
+                    {
+                        path: 'view-user',
+                        component: ViewUser,
+                        name: 'view-user',
+                    }
+                ]
+            }
+        ]
     },
     {
         path: '/account',

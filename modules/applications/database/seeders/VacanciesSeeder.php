@@ -38,7 +38,7 @@ class VacanciesSeeder extends Seeder
         foreach ($vacancies as $vacancy) {
 
             Application::factory()
-                ->count(5)
+                ->count(1)
                 ->create([
                     'user_id' => $vacancy->realtor->id,
                     'property_id' => $vacancy->property->id,

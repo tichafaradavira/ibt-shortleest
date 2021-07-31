@@ -14,9 +14,6 @@
             <v-card-title  class="header-theme text-left">
               <span class="white--text  font-weight-bold">Sign In</span>
             </v-card-title>
-            <v-card-subtitle class="header-theme text-left">
-              <span class="white--text">Manage your clients,properties and prospective tenants.</span>
-            </v-card-subtitle>
             <v-divider></v-divider>
 
             <v-card-text class="p-4">
@@ -117,7 +114,7 @@ export default {
       const isValid = await this.$refs.observer.validate();
       if (isValid) {
         this.loading = true;
-        await this.$axios.post(`/users/signin`,
+        await this.$axios.post(`/admin/users/signin`,
             this.user,
         ).then(async response => {
             await localStorage.setItem("token", response.data.token);

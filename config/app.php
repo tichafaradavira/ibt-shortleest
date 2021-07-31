@@ -170,6 +170,7 @@ return [
         Modules\Users\Providers\ModuleServiceProvider::class,
         Modules\Properties\Providers\ModuleServiceProvider::class,
         Modules\Applications\Providers\ModuleServiceProvider::class,
+        Modules\Admin\Providers\ModuleServiceProvider::class,
 
         /*
          * Application Service Providers...

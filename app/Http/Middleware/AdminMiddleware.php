@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Users\Http\Middleware;
+namespace App\Http\Middleware;
 
 use Closure;
 
@@ -15,6 +15,6 @@ class AdminMiddleware
 
         }
 
-        return response('UNAUTHORIZED', 403);
+        return response('You are not authorized', 403);
     }
 }

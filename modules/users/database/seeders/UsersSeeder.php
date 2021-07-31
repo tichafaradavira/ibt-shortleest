@@ -20,7 +20,7 @@ class UsersSeeder extends Seeder
         $admin = User::factory()
             ->count(1)
             ->create([
-                'email' => 'admin@ibtrealtor.com',
+                'email' => 'tech@shortleest.com',
                 'is_admin' => true,
                 'otp' => 3333,
             ]);
@@ -41,27 +41,6 @@ class UsersSeeder extends Seeder
                     'zip_code' => "28316",
                 ]
             ]);
-
-
-
-        $realtor2 = User::factory()
-            ->count(1)
-            ->create([
-                'email' => 'realtor2@gmail.com',
-                'password' => Hash::make('test12345'),
-                'otp' => 3333,
-                'settings' => [
-                    'currency' => "\$",
-                    'language' => "en",
-                    'street_address' => "26621 Christiansen Knolls",
-                    'suburb' => "Borrowdale",
-                    'city' => "randburg",
-                    'country' => "South Africa",
-                    'zip_code' => "28316",
-                ]
-
-            ]);
-
 
     }
 }
