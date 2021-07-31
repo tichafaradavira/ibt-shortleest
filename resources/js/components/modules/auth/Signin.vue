@@ -123,7 +123,7 @@ export default {
             await localStorage.setItem("token", response.data.token);
             await this.$store.commit('updateUser', response.data.user)
             await this.$store.commit('updateToken', response.data.token)
-            this.$router.push({name: 'users'})
+            this.$router.push({name: 'applications'})
         }).catch(error => {
             this.errorMessage = error.response.data;
         }).finally(() => {
