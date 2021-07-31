@@ -101,7 +101,7 @@ const routes = [
         name: 'admin-auth',
         children: [
             {
-                path: 'signin',
+                path: 'admin-signin',
                 component: AdminSignin,
                 name: 'admin-signin'
             },
