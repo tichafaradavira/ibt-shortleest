@@ -199,6 +199,29 @@ export default {
             this.loadUsers();
           });
     },
+      async activateUser(id) {
+          this.loadingMessage = "Activating user...";
+          this.loadingColor = "green";
+          this.loading = true;
+          let token = localStorage.getItem("token");
+          await this.$axios.post(
+              `/admin/users/${id}/activate`,
+              {},
+              {
+                  headers: {Authorization: `Bearer ${token}`},
+                  params: {}
+              }
+          )
+              .then(response => {
+                  this.loading = false;
+                  this.snackMessage = "User activated";
+                  this.snackbar = true;
+                  this.snackColor = 'green';
+                  this.resetMessages();
+              }).finally(() => {
+                  this.loadUsers();
+              });
+      },
     openUser(id) {
       this.$router.push({name:"view-user", params : {id: id }});
     },
