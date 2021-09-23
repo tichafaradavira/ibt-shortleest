@@ -32,6 +32,7 @@ class UserFactory extends Factory
             'language' => $this->faker->languageCode,
             'phone_number' => $this->faker->phoneNumber,
             'email_verified_at' => Carbon::now(),
+            'trial_ends_at' => Carbon::now()->addMonth(),
             'suspended_at' => null,
             'remember_token' => Str::random(10),
         ];

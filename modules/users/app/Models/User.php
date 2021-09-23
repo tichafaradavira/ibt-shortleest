@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Arr;
+use Laravel\Cashier\Billable;
 use Laravel\Passport\HasApiTokens;
 use Modules\Users\Database\Factories\UserFactory;
 
@@ -13,6 +14,7 @@ class User extends Authenticatable
     use Notifiable;
     use HasApiTokens;
     use HasFactory;
+    use Billable;
 
     protected  $table = "users";
 

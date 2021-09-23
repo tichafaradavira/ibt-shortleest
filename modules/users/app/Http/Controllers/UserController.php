@@ -63,7 +63,6 @@ class UserController extends Controller
     }
 
 
-
     public function verifyEmail(VerifyEmailRequest $request, UserService $service)
     {
         $inputs = $request->all();
@@ -75,7 +74,6 @@ class UserController extends Controller
 
         }
     }
-
 
 
     public function resetPassword(ResetPasswordRequest $request, UserService $service)
@@ -91,11 +89,16 @@ class UserController extends Controller
         }
     }
 
+    /**
+     * @param ForgotPasswordRequest $request
+     * @param UserService $service
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
+     */
     public function forgotPassword(ForgotPasswordRequest $request, UserService $service)
     {
         $email = $request->input('email');
         $user = $service->getUserByEmail($email);
-        if(!$user){
+        if (!$user) {
             return response('User with provided email address not found', 401);
         }
 
@@ -109,6 +112,10 @@ class UserController extends Controller
     }
 
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
+     */
     protected function logout(Request $request)
     {
         $token = $request->user()->token();
@@ -128,6 +135,11 @@ class UserController extends Controller
         return response(new UserResource($user), 200);
     }
 
+    /**
+     * @param Request $request
+     * @param UserService $service
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
+     */
     protected function deactivate(Request $request, UserService $service)
     {
         $user = $request->user();
@@ -135,11 +147,11 @@ class UserController extends Controller
         $user = $service->deactivate($user);
         $user->token()->revoke();
 
-        if($user){
-            return response('Account deactivated!',  200);
+        if ($user) {
+            return response('Account deactivated!', 200);
 
-        }else{
-            return response( "Account not deactivated", 422);
+        } else {
+            return response("Account not deactivated", 422);
 
         }
     }
@@ -154,16 +166,126 @@ class UserController extends Controller
     {
         $user = $request->user();
         $inputs = $request->all();
-        $user =  $service->updateProfile($inputs, $user);
+        $user = $service->updateProfile($inputs, $user);
 
-         if($user){
-             return response(new UserResource($user), 200);
+        if ($user) {
+            return response(new UserResource($user), 200);
 
-         }else{
-             return response(new UserResource($user), 422);
+        } else {
+            return response(new UserResource($user), 422);
 
-         }
+        }
     }
+
+    /**
+     * @param Request $request
+     * @return mixed
+     */
+    public function getSetupIntent(Request $request)
+    {
+        return response($request->user()->createSetupIntent(), 200);
+    }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function postPaymentMethods(Request $request)
+    {
+        $user = $request->user();
+        $paymentMethodID = $request->get('payment_method');
+        $default = $request->get('default');
+
+        if ($user->stripe_id == null) {
+            $user->createAsStripeCustomer();
+        }
+
+        $user->addPaymentMethod($paymentMethodID);
+
+        if($default || !$user->hasDefaultPaymentMethod()){
+            $user->updateDefaultPaymentMethod($paymentMethodID);
+        }
+
+        return response()->json(null, 204);
+    }
+
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function getPaymentMethods(Request $request)
+    {
+        $user = $request->user();
+        $methods = [];
+
+
+        if ($user->hasPaymentMethod()) {
+            foreach ($user->paymentMethods() as $method) {
+                array_push($methods, [
+                    'id' => $method->id,
+                    'brand' => $method->card->brand,
+                    'last_four' => $method->card->last4,
+                    'exp_month' => $method->card->exp_month,
+                    'exp_year' => $method->card->exp_year,
+                    'default' => $this->isDefaultPaymentMethod($user, $method),
+                ]);
+            }
+        }
+
+        return response()->json($methods, 200);
+    }
+
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function removeCard(Request $request)
+    {
+        $user = $request->user();
+        $paymentMethodID = $request->input('id');
+        $paymentMethod = $user->findPaymentMethod($paymentMethodID);
+
+        if(!$this->isDefaultPaymentMethod($user, $paymentMethod))
+        {
+            $paymentMethod->delete();
+            return response()->json("Payment method deleted", 200);
+        }
+        else{
+            return response()->json("Can not remove default payment method", 401);
+        }
+
+    }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function changeDefault(Request $request)
+    {
+        $user = $request->user();
+        $paymentMethodID = $request->input('id');
+        $user->updateDefaultPaymentMethod($paymentMethodID);
+
+        return response()->json(null, 200);
+    }
+
+
+    /**
+     * @param $user
+     * @param $method
+     * @return bool
+     */
+    public function isDefaultPaymentMethod($user, $method)
+    {
+        if ($user->defaultPaymentMethod()->id == $method->id) {
+            return true;
+        }
+
+        return false;
+    }
+
 
 
 }

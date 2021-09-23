@@ -32,6 +32,8 @@ class UserRepository
 
 
         if ($user->save()) {
+            $this->createStripeAccount($user);
+
             Mail::to($user->email)
                 ->send(new SendEmailVerifyUserEmail($user));
 
@@ -90,6 +92,7 @@ class UserRepository
         if ($otp = Arr::get($data, 'otp')) {
             if ($otp == $user->otp && $user->otp_expires_at > Carbon::now()) {
                 $user->email_verified_at = Carbon::now();
+                $user->trial_ends_at = Carbon::now()->addMonth();
                 $user->save();
                 return $user;
             } else {
@@ -98,7 +101,6 @@ class UserRepository
         }
 
         return false;
-
 
     }
 
@@ -129,6 +131,20 @@ class UserRepository
     public function generateOtp()
     {
         return rand(10000, 99999);
+    }
+
+    /**
+     * @param $user
+     * @return mixed
+     */
+    public function createStripeAccount($user){
+        $stripeCustomer = $user->createAsStripeCustomer([
+            "name" => $user->first_name." ".$user->last_name,
+            "email" => $user->email,
+            "description" => "Real estate agent billing",
+        ]);
+
+        return $stripeCustomer;
     }
 
 

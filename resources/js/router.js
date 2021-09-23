@@ -20,7 +20,10 @@ import ViewVacancy from "./components/modules/vacancies/ViewVacancy";
 import VerifyEmail from "./components/modules/auth/VerifyEmail";
 import Reset from "./components/modules/auth/Reset";
 import ViewProfile from "./components/modules/auth/ViewProfile";
+import ViewBilling from "./components/modules/auth/ViewBilling";
 import ProfileForm from "./components/modules/auth/ProfileForm";
+import BillingForm from "./components/modules/auth/BillingForm";
+import IncompleteBilling from "./components/modules/auth/IncompleteBilling";
 import Success from "./components/modules/applications/Forms/Success";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 import Help from "./components/modules/manual/Help";
@@ -193,9 +196,24 @@ const routes = [
                 name: 'profile',
             },
             {
+                path: 'billing',
+                component: ViewBilling,
+                name: 'billing',
+            },
+            {
                 path: 'profile-form',
                 component: ProfileForm,
                 name: 'profile-form',
+            },
+            {
+                path: 'billing-form',
+                component: BillingForm,
+                name: 'billing-form',
+            },
+            {
+                path: 'incomplete-billing',
+                component: IncompleteBilling,
+                name: 'incomplete-billing',
             },
             {
                 path: 'help',

@@ -100,6 +100,9 @@ class UserService
     function deactivate(User $user)
     {
         $user->deactivated_at = Carbon::now();
+        if ($user->subscribed('default')) {
+            $user->subscription('default')->cancel();
+        }
         $user->save();
 
         if ($user) {

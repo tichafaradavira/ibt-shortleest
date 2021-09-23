@@ -8,7 +8,7 @@ Route::post('/apply/{realtor}/{token}', [\Modules\Applications\Http\Controllers\
 Route::get('/apply/{realtor}/{token}', [\Modules\Applications\Http\Controllers\ApplyController::class, 'getVacancy'])->name('modules.client.get-vacancy');
 
 
-Route::middleware(['auth:api'])->group(function () {
+Route::middleware(['auth:api','paymentmethod','completepayment'])->group(function () {
 
     Route::get('/vacancies', [VacanciesController::class, 'browse'])->name('modules.client.browse');
     Route::post('/vacancies/add', [VacanciesController::class, 'add'])->name('modules.client.add');
