@@ -67,10 +67,22 @@
                     >Account
                     </v-list-item-title>
                   </template>
-
-                  <v-list-item link :to="{ name: 'profile' }">
-                    <v-list-item-title class=" white--text subtitle-2">My Account</v-list-item-title>
-                  </v-list-item>
+                    <v-list-item link :to="{ name: 'profile' }">
+                        <v-list-item-icon>
+                            <v-icon class="white--text">
+                                mdi-account-circle
+                            </v-icon>
+                            <v-list-item-title class=" white--text ml-2 subtitle-2">My Account</v-list-item-title>
+                        </v-list-item-icon>
+                    </v-list-item>
+                    <v-list-item link :to="{ name: 'billing' }">
+                        <v-list-item-icon>
+                            <v-icon class="white--text">
+                                mdi-credit-card
+                            </v-icon>
+                            <v-list-item-title class=" white--text ml-2 subtitle-2">My Billing</v-list-item-title>
+                        </v-list-item-icon>
+                    </v-list-item>
                   <v-list-item link>
                     <v-list-item-title>
                       <v-btn text color="error" @click="logout">

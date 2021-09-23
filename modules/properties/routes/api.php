@@ -5,7 +5,7 @@ use Modules\Properties\Http\Controllers\PropertiesController;
 use Modules\Properties\Http\Controllers\ClientsController;
 
 
-Route::middleware(['auth:api'])->group(function () {
+Route::middleware(['auth:api', 'paymentmethod','completepayment'])->group(function () {
     Route::get('/properties', [PropertiesController::class, 'browse'])->name('modules.property.browse');
     Route::post('/properties/add', [PropertiesController::class, 'add'])->name('modules.property.add');
     Route::post('/properties/{entity}/edit', [PropertiesController::class, 'edit'])->name('modules.property.edit');

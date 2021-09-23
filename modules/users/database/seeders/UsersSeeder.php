@@ -42,5 +42,22 @@ class UsersSeeder extends Seeder
                 ]
             ]);
 
+        $realtor2 = User::factory()
+            ->count(1)
+            ->create([
+                'email' => 'realtor2@gmail.com',
+                'password' => Hash::make('test12345'),
+                'otp' => 3333,
+                'settings' => [
+                    'currency' => "\$",
+                    'language' => "en",
+                    'street_address' => "26621 Christiansen Knolls",
+                    'suburb' => "Borrowdale",
+                    'city' => "randburg",
+                    'country' => "South Africa",
+                    'zip_code' => "28316",
+                ]
+            ]);
+
     }
 }
