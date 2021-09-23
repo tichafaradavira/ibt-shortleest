@@ -10,11 +10,11 @@ class  CompleteSubscriptionMiddleware
     public function handle($request, Closure $next)
     {
 
-//        $user =  $request->user();
-//
-//        if (!$user->hasIncompletePayment('default')) {
-//            return $next($request);
-//        }
+        $user =  $request->user();
+
+        if (!$user->hasIncompletePayment('default')) {
+            return $next($request);
+        }
 
         return response(405, 403);
     }
