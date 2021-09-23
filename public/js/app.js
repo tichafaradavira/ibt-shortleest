@@ -2038,6 +2038,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+<<<<<<< HEAD
 //
 //
 //
@@ -2050,6 +2051,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+=======
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
@@ -5160,9 +5163,15 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/BillingForm.vue?vue&type=script&lang=js&":
 /*!*******************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/BillingForm.vue?vue&type=script&lang=js& ***!
+=======
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/ProfileForm.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/ProfileForm.vue?vue&type=script&lang=js& ***!
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
   \*******************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -5171,12 +5180,99 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+<<<<<<< HEAD
 /* harmony import */ var _general_loading__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../general/loading */ "./resources/js/components/modules/general/loading.vue");
 /* harmony import */ var lodash_pick__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash/pick */ "./node_modules/lodash/pick.js");
 /* harmony import */ var lodash_pick__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash_pick__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _general_CountrySelect__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../general/CountrySelect */ "./resources/js/components/modules/general/CountrySelect.vue");
 /* harmony import */ var _general_CurrencySelect__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../general/CurrencySelect */ "./resources/js/components/modules/general/CurrencySelect.vue");
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./constants */ "./resources/js/components/modules/auth/constants.js");
+=======
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _general_loading__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../general/loading */ "./resources/js/components/modules/general/loading.vue");
+/* harmony import */ var lodash_pick__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash/pick */ "./node_modules/lodash/pick.js");
+/* harmony import */ var lodash_pick__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_pick__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _general_CountrySelect__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../general/CountrySelect */ "./resources/js/components/modules/general/CountrySelect.vue");
+/* harmony import */ var _general_CurrencySelect__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../general/CurrencySelect */ "./resources/js/components/modules/general/CurrencySelect.vue");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./constants */ "./resources/js/components/modules/auth/constants.js");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 //
 //
 //
@@ -5244,6 +5340,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
+<<<<<<< HEAD
       stripeAPIToken: 'pk_test_51JKEsrIYDkw8EwvfNTmBGdxSgWbsS9XrlO5qwWrKzKZlPW9IB7kCbBCoEaqYRgUXlAIhxbP2tY9n6ZmsE86TYeI400dHQrgU7T',
       stripe: '',
       elements: '',
@@ -5255,6 +5352,22 @@ __webpack_require__.r(__webpack_exports__);
       addPaymentStatus: 0,
       addPaymentStatusError: '',
       paymentMethods: [],
+=======
+      profile: {
+        first_name: '',
+        last_name: '',
+        company_name: '',
+        country: '',
+        language: '',
+        phone_number: '',
+        settings: {
+          language: '',
+          currency: ''
+        }
+      },
+      currencies: _constants__WEBPACK_IMPORTED_MODULE_5__.CURRENCIES,
+      countries: _constants__WEBPACK_IMPORTED_MODULE_5__.COUNTRIES,
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
       showDialog: false,
       loading: true,
       submitting: false,
@@ -5267,6 +5380,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {},
   components: {
+<<<<<<< HEAD
     loading: _general_loading__WEBPACK_IMPORTED_MODULE_0__.default
   },
   methods: {
@@ -5359,10 +5473,76 @@ __webpack_require__.r(__webpack_exports__);
     loadPaymentMethods: function loadPaymentMethods() {
       var token = localStorage.getItem("token");
       this.$axios.get('/users/payment-methods', {
+=======
+    loading: _general_loading__WEBPACK_IMPORTED_MODULE_1__.default
+  },
+  methods: {
+    submitProfile: function submitProfile() {
+      var _this = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+        var isValid;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return _this.$refs.observer.validate();
+
+              case 2:
+                isValid = _context.sent;
+
+                if (isValid) {
+                  _this.loadingMessage = "Saving profile...";
+                  _this.loading = true;
+
+                  _this.saveProfile();
+                }
+
+              case 4:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }))();
+    },
+    saveProfile: function saveProfile() {
+      var _this2 = this;
+
+      var token = localStorage.getItem("token");
+      this.$axios.post("/users/realtor/edit/profile", this.profile, {
+        headers: {
+          Authorization: "Bearer ".concat(token)
+        }
+      }, {
+        emulateJSON: true
+      }).then(function (response) {
+        _this2.profile = false;
+        _this2.profile = response.data;
+        _this2.snackMessage = "Profile saved";
+        _this2.snackbar = true;
+        _this2.snackColor = 'green';
+        setTimeout(function () {
+          _this2.$router.push({
+            name: 'profile'
+          });
+        }, 3000);
+      });
+    },
+    getProfile: function getProfile() {
+      var _this3 = this;
+
+      var result = this.$route.query.result;
+      this.loading = true;
+      var token = localStorage.getItem("token");
+      this.$axios.get("/users/realtor/profile", {
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
         headers: {
           Authorization: "Bearer ".concat(token)
         }
       }).then(function (response) {
+<<<<<<< HEAD
         this.paymentMethods = response.data;
       }.bind(this));
     }
@@ -5376,15 +5556,40 @@ __webpack_require__.r(__webpack_exports__);
       this.configureStripe();
     }.bind(this));
     this.loadIntent();
+=======
+        _this3.profile = response.data;
+        console.log(_this3.profile);
+        _this3.loading = false;
+      });
+    },
+    initialise: function initialise() {
+      this.getProfile();
+    },
+    cancel: function cancel() {
+      this.$router.push({
+        name: 'profile'
+      });
+    }
+  },
+  mounted: function mounted() {
+    this.initialise();
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
   }
 });
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/IncompleteBilling.vue?vue&type=script&lang=js&":
 /*!*************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/IncompleteBilling.vue?vue&type=script&lang=js& ***!
   \*************************************************************************************************************************************************************************************************************************************/
+=======
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/Reset.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/Reset.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************************************************************/
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -5392,6 +5597,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+<<<<<<< HEAD
 /* harmony import */ var _general_loading__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../general/loading */ "./resources/js/components/modules/general/loading.vue");
 /* harmony import */ var _applications_components_AddressDetails__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../applications/components/AddressDetails */ "./resources/js/components/modules/applications/components/AddressDetails.vue");
 /* harmony import */ var _components_ProfileDetails__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/ProfileDetails */ "./resources/js/components/modules/auth/components/ProfileDetails.vue");
@@ -5838,6 +6044,53 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+=======
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 //
 //
 //
@@ -6746,6 +6999,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/ViewBilling.vue?vue&type=script&lang=js&":
 /*!*******************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/ViewBilling.vue?vue&type=script&lang=js& ***!
@@ -7024,6 +7278,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /***/ }),
 
+=======
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/ViewProfile.vue?vue&type=script&lang=js&":
 /*!*******************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/ViewProfile.vue?vue&type=script&lang=js& ***!
@@ -11325,6 +11581,180 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+<<<<<<< HEAD
+// import axios from "axios";
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: {
+    application: {
+      type: Number,
+      required: true
+    },
+    statusTitle: {
+      type: String,
+      "default": 'Applications'
+    },
+    vacancy: {
+      type: Number,
+      required: true
+    }
+  },
+  data: function data() {
+    return {
+      dialogMessage: "Are you sure?",
+      pagination: {},
+      message: "",
+      loadingMessage: "Loading Applications....",
+      loadingColor: "#2E86C1",
+      showSuccess: false,
+      toDelete: null,
+      showDelete: false,
+      deleting: false,
+      applications: [],
+      name: "",
+      place: "",
+      filterCriteria: false,
+      searchCriteria: "",
+      loading: true,
+      snackbar: false,
+      snackMessage: "Done",
+      snackColor: "#2E86C1"
+    };
+  },
+  components: {
+    Loading: _general_loading__WEBPACK_IMPORTED_MODULE_1__.default
+  },
+  computed: {},
+  methods: {
+    loadApplications: function loadApplications() {
+      var _this = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+        var token;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _this.loading = true;
+                _context.next = 3;
+                return localStorage.getItem("token");
+
+              case 3:
+                token = _context.sent;
+                _context.next = 6;
+                return _this.$axios.get("/applications", {
+                  headers: {
+                    Authorization: "Bearer ".concat(token)
+                  },
+                  params: {
+                    vacancy: _this.vacancy,
+                    application_status: _this.application,
+                    page: _this.pagination.current_page,
+                    search: _this.searchCriteria
+                  }
+                }).then(function (response) {
+                  _this.applications = response.data.data;
+                  _this.pagination = response.data.pagination;
+                  _this.loading = false;
+
+                  _this.resetMessages();
+                });
+
+              case 6:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }))();
+    },
+    deleteApplication: function deleteApplication(id) {
+      var _this2 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2() {
+        var token;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                _this2.loadingMessage = "Deleting Application...";
+                _this2.loadingColor = "red";
+                _this2.loading = true;
+                token = localStorage.getItem("token");
+                _context2.next = 6;
+                return _this2.$axios.post("/applications/".concat(id, "/delete"), {}, {
+                  headers: {
+                    Authorization: "Bearer ".concat(token)
+                  },
+                  params: {
+                    search: _this2.searchCriteria
+                  }
+                }).then(function (response) {
+                  _this2.snackMessage = "Application deleted";
+                  _this2.snackbar = true;
+                  _this2.snackColor = 'red';
+                  _this2.loading = false;
+
+                  _this2.resetMessages();
+                })["finally"](function () {
+                  _this2.loadApplications();
+                });
+
+              case 6:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2);
+      }))();
+    },
+    openApplication: function openApplication(id) {
+      this.$router.push('/account/application/' + id);
+    },
+    showCriteria: function showCriteria() {
+      this.filterCriteria = !this.filterCriteria;
+    },
+    searchSomething: function searchSomething() {
+      this.loadApplications();
+    },
+    resetMessages: function resetMessages() {
+      this.loadingMessage = "Loading applications....";
+      this.loadingColor = "#2E86C1";
+      this.toDelete = null;
+    },
+    refresh: function refresh() {
+      this.loadApplications();
+    }
+  },
+  mounted: function mounted() {
+    this.loadApplications();
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/vacancies/components/VacancyDetails.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/vacancies/components/VacancyDetails.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _general_DateFormat__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../general/DateFormat */ "./resources/js/components/modules/general/DateFormat.vue");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+=======
 // import axios from "axios";
 
 
@@ -11606,6 +12036,241 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+<<<<<<< HEAD
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    DateFormat: _general_DateFormat__WEBPACK_IMPORTED_MODULE_1__.default
+  },
+  data: function data() {
+    return {
+      show: false
+    };
+  },
+  props: {
+    vacancy: {
+      type: Object,
+      required: true
+    },
+    name: {
+      type: String,
+      "default": "vacancy"
+    }
+  },
+  methods: {
+    copySomething: function copySomething(text) {
+      var _this = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.prev = 0;
+                _context.next = 3;
+                return navigator.clipboard.writeText(text);
+
+              case 3:
+                _this.show = true;
+                setTimeout(_this.toggleCopied, 3000);
+                _context.next = 10;
+                break;
+
+              case 7:
+                _context.prev = 7;
+                _context.t0 = _context["catch"](0);
+                _this.show = false;
+
+              case 10:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, null, [[0, 7]]);
+      }))();
+    },
+    toggleCopied: function toggleCopied() {
+      this.show = false;
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Home.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Home.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+=======
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 //
 //
 //
@@ -13724,12 +14389,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+<<<<<<< HEAD
 /* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../router */ "./resources/js/router.js");
 
+=======
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   install: function install(Vue, options) {
+<<<<<<< HEAD
     axios__WEBPACK_IMPORTED_MODULE_0___default().interceptors.response.use(function (response) {
       // Any status code that lie within the range of 2xx cause this function to trigger
       // Do something with response data
@@ -13754,6 +14423,10 @@ __webpack_require__.r(__webpack_exports__);
       }
     });
     Vue.prototype.$axios = (axios__WEBPACK_IMPORTED_MODULE_0___default());
+=======
+    Vue.prototype.$axios = (axios__WEBPACK_IMPORTED_MODULE_0___default()); // Vue.prototype.$axios.defaults.baseURL = "https://www.shortleest.com/api";
+
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
     Vue.prototype.$axios.defaults.baseURL = "http://127.0.0.1:80" + "/api";
   }
 });
@@ -13845,7 +14518,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+<<<<<<< HEAD
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+=======
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 /* harmony import */ var _components_modules_auth_Signup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/modules/auth/Signup */ "./resources/js/components/modules/auth/Signup.vue");
 /* harmony import */ var _components_modules_auth_Signin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/modules/auth/Signin */ "./resources/js/components/modules/auth/Signin.vue");
 /* harmony import */ var _components_layouts_Auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/layouts/Auth */ "./resources/js/components/layouts/Auth.vue");
@@ -13867,6 +14544,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_modules_auth_VerifyEmail__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/modules/auth/VerifyEmail */ "./resources/js/components/modules/auth/VerifyEmail.vue");
 /* harmony import */ var _components_modules_auth_Reset__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/modules/auth/Reset */ "./resources/js/components/modules/auth/Reset.vue");
 /* harmony import */ var _components_modules_auth_ViewProfile__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/modules/auth/ViewProfile */ "./resources/js/components/modules/auth/ViewProfile.vue");
+<<<<<<< HEAD
 /* harmony import */ var _components_modules_auth_ViewBilling__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/modules/auth/ViewBilling */ "./resources/js/components/modules/auth/ViewBilling.vue");
 /* harmony import */ var _components_modules_auth_ProfileForm__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/modules/auth/ProfileForm */ "./resources/js/components/modules/auth/ProfileForm.vue");
 /* harmony import */ var _components_modules_auth_BillingForm__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/modules/auth/BillingForm */ "./resources/js/components/modules/auth/BillingForm.vue");
@@ -13883,6 +14561,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+=======
+/* harmony import */ var _components_modules_auth_ProfileForm__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/modules/auth/ProfileForm */ "./resources/js/components/modules/auth/ProfileForm.vue");
+/* harmony import */ var _components_modules_applications_Forms_Success__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/modules/applications/Forms/Success */ "./resources/js/components/modules/applications/Forms/Success.vue");
+/* harmony import */ var _components_pages_PrivacyPolicy__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/pages/PrivacyPolicy */ "./resources/js/components/pages/PrivacyPolicy.vue");
+/* harmony import */ var _components_modules_manual_Help__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/modules/manual/Help */ "./resources/js/components/modules/manual/Help.vue");
+/* harmony import */ var _components_pages_Home__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/pages/Home */ "./resources/js/components/pages/Home.vue");
+/* harmony import */ var _components_modules_admin_Users__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/modules/admin/Users */ "./resources/js/components/modules/admin/Users.vue");
+/* harmony import */ var _components_modules_admin_ViewUser__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/modules/admin/ViewUser */ "./resources/js/components/modules/admin/ViewUser.vue");
+/* harmony import */ var _components_modules_admin_AdminSignin__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/modules/admin/AdminSignin */ "./resources/js/components/modules/admin/AdminSignin.vue");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var _components_layouts_AdminAccount__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/layouts/AdminAccount */ "./resources/js/components/layouts/AdminAccount.vue");
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 
 
 
@@ -13915,10 +14605,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+<<<<<<< HEAD
 vue__WEBPACK_IMPORTED_MODULE_33__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_34__.default);
 var routes = [{
   path: '',
   component: _components_pages_Home__WEBPACK_IMPORTED_MODULE_28__.default,
+=======
+vue__WEBPACK_IMPORTED_MODULE_30__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_31__.default);
+var routes = [{
+  path: '',
+  component: _components_pages_Home__WEBPACK_IMPORTED_MODULE_25__.default,
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
   name: 'home'
 }, {
   path: '/auth',
@@ -13949,7 +14646,11 @@ var routes = [{
     name: 'terms-conditions'
   }, {
     path: '/privacy-policy',
+<<<<<<< HEAD
     component: _components_pages_PrivacyPolicy__WEBPACK_IMPORTED_MODULE_26__.default,
+=======
+    component: _components_pages_PrivacyPolicy__WEBPACK_IMPORTED_MODULE_23__.default,
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
     name: 'privacy-policy'
   }, {
     path: '/verifyemail/:email',
@@ -13962,7 +14663,11 @@ var routes = [{
   name: 'apply'
 }, {
   path: '/apply/submitted',
+<<<<<<< HEAD
   component: _components_modules_applications_Forms_Success__WEBPACK_IMPORTED_MODULE_25__.default,
+=======
+  component: _components_modules_applications_Forms_Success__WEBPACK_IMPORTED_MODULE_22__.default,
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
   name: 'apply-submitted'
 }, {
   path: '/admin',
@@ -13970,6 +14675,7 @@ var routes = [{
   name: 'admin-auth',
   children: [{
     path: 'admin-signin',
+<<<<<<< HEAD
     component: _components_modules_admin_AdminSignin__WEBPACK_IMPORTED_MODULE_31__.default,
     name: 'admin-signin'
   }, {
@@ -13983,6 +14689,21 @@ var routes = [{
     }, {
       path: 'view-user',
       component: _components_modules_admin_ViewUser__WEBPACK_IMPORTED_MODULE_30__.default,
+=======
+    component: _components_modules_admin_AdminSignin__WEBPACK_IMPORTED_MODULE_28__.default,
+    name: 'admin-signin'
+  }, {
+    path: 'admin-account',
+    component: _components_layouts_AdminAccount__WEBPACK_IMPORTED_MODULE_29__.default,
+    name: 'admin-account',
+    children: [{
+      path: 'users',
+      component: _components_modules_admin_Users__WEBPACK_IMPORTED_MODULE_26__.default,
+      name: 'users'
+    }, {
+      path: 'view-user',
+      component: _components_modules_admin_ViewUser__WEBPACK_IMPORTED_MODULE_27__.default,
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
       name: 'view-user'
     }]
   }]
@@ -14039,6 +14760,7 @@ var routes = [{
     component: _components_modules_auth_ViewProfile__WEBPACK_IMPORTED_MODULE_20__.default,
     name: 'profile'
   }, {
+<<<<<<< HEAD
     path: 'billing',
     component: _components_modules_auth_ViewBilling__WEBPACK_IMPORTED_MODULE_21__.default,
     name: 'billing'
@@ -14057,6 +14779,14 @@ var routes = [{
   }, {
     path: 'help',
     component: _components_modules_manual_Help__WEBPACK_IMPORTED_MODULE_27__.default,
+=======
+    path: 'profile-form',
+    component: _components_modules_auth_ProfileForm__WEBPACK_IMPORTED_MODULE_21__.default,
+    name: 'profile-form'
+  }, {
+    path: 'help',
+    component: _components_modules_manual_Help__WEBPACK_IMPORTED_MODULE_24__.default,
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
     name: 'help'
   }],
   beforeEnter: function beforeEnter(to, from, next) {
@@ -14072,7 +14802,11 @@ var routes = [{
   path: '*',
   redirect: '/'
 }];
+<<<<<<< HEAD
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_34__.default({
+=======
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_31__.default({
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
   mode: 'history',
   routes: routes
 }));
@@ -14190,7 +14924,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
+<<<<<<< HEAD
 ___CSS_LOADER_EXPORT___.push([module.id, "\n.title-color {\n  color: \"#2E86C1\";\n}\n", ""]);
+=======
+___CSS_LOADER_EXPORT___.push([module.id, "\n.title-color {\r\n  color: \"#2E86C1\";\n}\r\n", ""]);
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -14341,6 +15079,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\n.text-input input {\r\n  color: #000
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/BillingForm.vue?vue&type=style&index=0&lang=css&":
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/BillingForm.vue?vue&type=style&index=0&lang=css& ***!
@@ -14365,6 +15104,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\n.text-input input {\n    color: #1A5
 
 /***/ }),
 
+=======
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 /***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/ProfileForm.vue?vue&type=style&index=0&lang=css&":
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/ProfileForm.vue?vue&type=style&index=0&lang=css& ***!
@@ -14574,7 +15315,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
+<<<<<<< HEAD
 ___CSS_LOADER_EXPORT___.push([module.id, "\n.finedTitle[data-v-a9aac016] {\r\n    font-weight: 900;\r\n    text-shadow: 2px 2px #000000;\n}\n.social-icon[data-v-a9aac016] {\r\n    font-size: 21px;\r\n    color: white;\n}\r\n", ""]);
+=======
+___CSS_LOADER_EXPORT___.push([module.id, "\n.finedTitle[data-v-a9aac016] {\n    font-weight: 900;\n    text-shadow: 2px 2px #000000;\n}\n.social-icon[data-v-a9aac016] {\n    font-size: 21px;\n    color: white;\n}\n.banner[data-v-a9aac016]{\n    border-radius: 50%;\n}\n", ""]);
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -57203,6 +57948,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/BillingForm.vue?vue&type=style&index=0&lang=css&":
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/BillingForm.vue?vue&type=style&index=0&lang=css& ***!
@@ -57233,6 +57979,8 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+=======
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 /***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/ProfileForm.vue?vue&type=style&index=0&lang=css&":
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/ProfileForm.vue?vue&type=style&index=0&lang=css& ***!
@@ -61531,6 +62279,7 @@ component.options.__file = "resources/js/components/modules/applications/compone
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./resources/js/components/modules/auth/BillingForm.vue":
 /*!**************************************************************!*\
   !*** ./resources/js/components/modules/auth/BillingForm.vue ***!
@@ -61611,6 +62360,8 @@ component.options.__file = "resources/js/components/modules/auth/IncompleteBilli
 
 /***/ }),
 
+=======
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 /***/ "./resources/js/components/modules/auth/ProfileForm.vue":
 /*!**************************************************************!*\
   !*** ./resources/js/components/modules/auth/ProfileForm.vue ***!
@@ -61857,6 +62608,7 @@ component.options.__file = "resources/js/components/modules/auth/VerifyEmail.vue
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./resources/js/components/modules/auth/ViewBilling.vue":
 /*!**************************************************************!*\
   !*** ./resources/js/components/modules/auth/ViewBilling.vue ***!
@@ -61896,6 +62648,8 @@ component.options.__file = "resources/js/components/modules/auth/ViewBilling.vue
 
 /***/ }),
 
+=======
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 /***/ "./resources/js/components/modules/auth/ViewProfile.vue":
 /*!**************************************************************!*\
   !*** ./resources/js/components/modules/auth/ViewProfile.vue ***!
@@ -63362,6 +64116,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./resources/js/components/modules/auth/BillingForm.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************!*\
   !*** ./resources/js/components/modules/auth/BillingForm.vue?vue&type=script&lang=js& ***!
@@ -63394,6 +64149,8 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+=======
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 /***/ "./resources/js/components/modules/auth/ProfileForm.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************!*\
   !*** ./resources/js/components/modules/auth/ProfileForm.vue?vue&type=script&lang=js& ***!
@@ -63490,6 +64247,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./resources/js/components/modules/auth/ViewBilling.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************!*\
   !*** ./resources/js/components/modules/auth/ViewBilling.vue?vue&type=script&lang=js& ***!
@@ -63506,6 +64264,8 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+=======
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 /***/ "./resources/js/components/modules/auth/ViewProfile.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************!*\
   !*** ./resources/js/components/modules/auth/ViewProfile.vue?vue&type=script&lang=js& ***!
@@ -64058,6 +64818,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./resources/js/components/modules/auth/BillingForm.vue?vue&type=style&index=0&lang=css&":
 /*!***********************************************************************************************!*\
   !*** ./resources/js/components/modules/auth/BillingForm.vue?vue&type=style&index=0&lang=css& ***!
@@ -64071,6 +64832,8 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+=======
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 /***/ "./resources/js/components/modules/auth/ProfileForm.vue?vue&type=style&index=0&lang=css&":
 /*!***********************************************************************************************!*\
   !*** ./resources/js/components/modules/auth/ProfileForm.vue?vue&type=style&index=0&lang=css& ***!
@@ -64579,6 +65342,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./resources/js/components/modules/auth/BillingForm.vue?vue&type=template&id=d8c0ceaa&":
 /*!*********************************************************************************************!*\
   !*** ./resources/js/components/modules/auth/BillingForm.vue?vue&type=template&id=d8c0ceaa& ***!
@@ -64613,6 +65377,8 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+=======
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 /***/ "./resources/js/components/modules/auth/ProfileForm.vue?vue&type=template&id=0aa21c4e&":
 /*!*********************************************************************************************!*\
   !*** ./resources/js/components/modules/auth/ProfileForm.vue?vue&type=template&id=0aa21c4e& ***!
@@ -64715,6 +65481,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./resources/js/components/modules/auth/ViewBilling.vue?vue&type=template&id=0080393c&":
 /*!*********************************************************************************************!*\
   !*** ./resources/js/components/modules/auth/ViewBilling.vue?vue&type=template&id=0080393c& ***!
@@ -64732,6 +65499,8 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+=======
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 /***/ "./resources/js/components/modules/auth/ViewProfile.vue?vue&type=template&id=04d70390&":
 /*!*********************************************************************************************!*\
   !*** ./resources/js/components/modules/auth/ViewProfile.vue?vue&type=template&id=04d70390& ***!
@@ -65504,6 +66273,7 @@ var render = function() {
                                     },
                                     [
                                       _c(
+<<<<<<< HEAD
                                         "v-list-item-icon",
                                         [
                                           _c(
@@ -65563,6 +66333,13 @@ var render = function() {
                                           )
                                         ],
                                         1
+=======
+                                        "v-list-item-title",
+                                        {
+                                          staticClass: " white--text subtitle-2"
+                                        },
+                                        [_vm._v("My Account")]
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                       )
                                     ],
                                     1
@@ -72809,6 +73586,7 @@ render._withStripped = true
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/BillingForm.vue?vue&type=template&id=d8c0ceaa&":
 /*!************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/BillingForm.vue?vue&type=template&id=d8c0ceaa& ***!
@@ -73242,6 +74020,8 @@ render._withStripped = true
 
 /***/ }),
 
+=======
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/ProfileForm.vue?vue&type=template&id=0aa21c4e&":
 /*!************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/ProfileForm.vue?vue&type=template&id=0aa21c4e& ***!
@@ -75832,6 +76612,7 @@ render._withStripped = true
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/ViewBilling.vue?vue&type=template&id=0080393c&":
 /*!************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/ViewBilling.vue?vue&type=template&id=0080393c& ***!
@@ -76186,6 +76967,8 @@ render._withStripped = true
 
 /***/ }),
 
+=======
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/ViewProfile.vue?vue&type=template&id=04d70390&":
 /*!************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/modules/auth/ViewProfile.vue?vue&type=template&id=04d70390& ***!
@@ -83332,7 +84115,19 @@ var render = function() {
     [
       _c(
         "v-app-bar",
+<<<<<<< HEAD
         { attrs: { absolute: "", app: "", color: "#FFF", dark: "" } },
+=======
+        {
+          attrs: {
+            "elevate-on-scroll": "",
+            fixed: "",
+            app: "",
+            color: "#FFF",
+            dark: ""
+          }
+        },
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
         [
           _c(
             "router-link",
@@ -83389,6 +84184,7 @@ var render = function() {
         [
           _c(
             "section",
+<<<<<<< HEAD
             { staticClass: "amber lighten-5" },
             [
               _c(
@@ -83455,6 +84251,99 @@ var render = function() {
                             "\n                        Get Started\n                    "
                           )
                         ]
+=======
+            {
+              staticClass: "d-flex justify-center align-center amber lighten-5",
+              staticStyle: { height: "800px" }
+            },
+            [
+              _c(
+                "v-layout",
+                {
+                  staticClass: "white--text",
+                  attrs: {
+                    column: "",
+                    "align-center": "",
+                    "justify-center": ""
+                  }
+                },
+                [
+                  _c(
+                    "v-row",
+                    [
+                      _c(
+                        "v-col",
+                        {
+                          staticClass:
+                            "d-flex align-center justify-center flex-column",
+                          attrs: { cols: "6" }
+                        },
+                        [
+                          _c(
+                            "h1",
+                            {
+                              staticClass:
+                                "blue--text darken-4--text mb-2 text-h2 text-xs-center font-weight-bold"
+                            },
+                            [
+                              _vm._v(
+                                "\n                                Find someone a home, easily..."
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "green--text mb-3 h6 font-weight-bold"
+                            },
+                            [
+                              _vm._v(
+                                "Manage properties, prospective\n                                tenants, rental\n                                applications and rental vacancies with ease.\n                            "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            {
+                              staticClass: "blue  mt-5",
+                              attrs: {
+                                dark: "",
+                                "x-large": "",
+                                to: { name: "signup" }
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n                                Get Started\n                            "
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-col",
+                        {
+                          staticClass: "d-flex align-center justify-center",
+                          attrs: { cols: "6" }
+                        },
+                        [
+                          _c("v-img", {
+                            staticClass: "banner",
+                            attrs: {
+                              "min-height": "600",
+                              "max-height": "600",
+                              "max-width": "600",
+                              src: "./images/home.jpg"
+                            }
+                          })
+                        ],
+                        1
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                       )
                     ],
                     1
@@ -83468,7 +84357,11 @@ var render = function() {
           _vm._v(" "),
           _c(
             "section",
+<<<<<<< HEAD
             { staticClass: "amber lighten-5" },
+=======
+            { staticClass: "ma-8 align-center " },
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
             [
               _c(
                 "v-layout",
@@ -83478,6 +84371,7 @@ var render = function() {
                     "v-flex",
                     { staticClass: "my-3", attrs: { xs12: "", sm4: "" } },
                     [
+<<<<<<< HEAD
                       _c(
                         "div",
                         { staticClass: "text-xs-center pa-4" },
@@ -83571,11 +84465,134 @@ var render = function() {
                                           )
                                         ]
                                       )
+=======
+                      _c("div", { staticClass: "text-xs-center pa-4" }, [
+                        _c(
+                          "h2",
+                          {
+                            staticClass:
+                              "display-1 green--text font-weight-bold m-2"
+                          },
+                          [_vm._v("Features")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "h4",
+                          { staticClass: " blue--text font-weight-bold m-2" },
+                          [
+                            _vm._v(
+                              "Simple, inituitive and minimalistic user interface to increase effiency."
+                            )
+                          ]
+                        )
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-flex",
+                    { attrs: { xs12: "" } },
+                    [
+                      _c(
+                        "v-container",
+                        { attrs: { "grid-list-xl": "" } },
+                        [
+                          _c(
+                            "v-layout",
+                            {
+                              attrs: { row: "", wrap: "", "align-center": "" }
+                            },
+                            [
+                              _c(
+                                "v-flex",
+                                { attrs: { xs12: "", md4: "" } },
+                                [
+                                  _c(
+                                    "v-card",
+                                    { attrs: { outlined: "" } },
+                                    [
+                                      _c("v-img", {
+                                        attrs: {
+                                          height: "250",
+                                          src: "./images/application.jpg"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-card-title",
+                                        {
+                                          staticClass: "layout justify-center",
+                                          attrs: { "primary-title": "" }
+                                        },
+                                        [
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass:
+                                                "headline teal--text darken-4--text blue--text font-weight-bold"
+                                            },
+                                            [_vm._v("Applications")]
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("v-card-text", [
+                                        _vm._v(
+                                          "\n                                           Allow people from anywhere, apply for rental, anytime without printing, scanning or faxing any documents.Do your part and help the world go green.\n                                        "
+                                        )
+                                      ])
                                     ],
                                     1
                                   )
                                 ],
                                 1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-flex",
+                                { attrs: { xs12: "", md4: "" } },
+                                [
+                                  _c(
+                                    "v-card",
+                                    { attrs: { outlined: "" } },
+                                    [
+                                      _c("v-img", {
+                                        attrs: {
+                                          height: "250",
+                                          src: "./images/home_vacancy.jpg"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-card-title",
+                                        {
+                                          staticClass: "layout justify-center",
+                                          attrs: { "primary-title": "" }
+                                        },
+                                        [
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass:
+                                                "headline teal--text darken-4--text blue--text font-weight-bold"
+                                            },
+                                            [_vm._v("Vacancies")]
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("v-card-text", [
+                                        _vm._v(
+                                          "\n                                            A property is available for rental ? Just create a vacancy.All applications will automatically be linked to the vacancy.\n                                        "
+                                        )
+                                      ])
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+<<<<<<< HEAD
                               )
                             ],
                             1
@@ -83622,12 +84639,17 @@ var render = function() {
                               attrs: { row: "", wrap: "", "align-center": "" }
                             },
                             [
+=======
+                              ),
+                              _vm._v(" "),
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                               _c(
                                 "v-flex",
                                 { attrs: { xs12: "", md4: "" } },
                                 [
                                   _c(
                                     "v-card",
+<<<<<<< HEAD
                                     { staticClass: "white" },
                                     [
                                       _c(
@@ -83641,9 +84663,15 @@ var render = function() {
                                                 "display-1 font-weight-bold blue--text"
                                             },
                                             [_vm._v("Simple")]
-                                          )
-                                        ]
-                                      ),
+=======
+                                    { attrs: { outlined: "" } },
+                                    [
+                                      _c("v-img", {
+                                        attrs: {
+                                          height: "250",
+                                          src: "./images/client.jpg"
+                                        }
+                                      }),
                                       _vm._v(" "),
                                       _c(
                                         "v-card-title",
@@ -83656,16 +84684,19 @@ var render = function() {
                                             "div",
                                             {
                                               staticClass:
-                                                "headline text-xs-center"
+                                                "headline teal--text darken-4--text blue--text font-weight-bold"
                                             },
-                                            [_vm._v("Easy to use")]
+                                            [_vm._v("Clients")]
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                           )
                                         ]
                                       ),
                                       _vm._v(" "),
+<<<<<<< HEAD
+=======
                                       _c("v-card-text", [
                                         _vm._v(
-                                          "\n                                        Shortleest is easy to understand and use, you will be productive in no time.\n                                    "
+                                          "\n                                           Managing other people's properties? No problem. Track your clients easily, and manage their properties seamlessly.\n                                        "
                                         )
                                       ])
                                     ],
@@ -83681,6 +84712,63 @@ var render = function() {
                                 [
                                   _c(
                                     "v-card",
+                                    { attrs: { outlined: "" } },
+                                    [
+                                      _c("v-img", {
+                                        attrs: {
+                                          height: "250",
+                                          src: "./images/home_property.jpg"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
+                                      _c(
+                                        "v-card-title",
+                                        {
+                                          staticClass: "layout justify-center",
+                                          attrs: { "primary-title": "" }
+                                        },
+                                        [
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass:
+<<<<<<< HEAD
+                                                "headline text-xs-center"
+                                            },
+                                            [_vm._v("Easy to use")]
+=======
+                                                "headline teal--text darken-4--text blue--text font-weight-bold"
+                                            },
+                                            [_vm._v("Properties")]
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("v-card-text", [
+                                        _vm._v(
+<<<<<<< HEAD
+                                          "\n                                        Shortleest is easy to understand and use, you will be productive in no time.\n                                    "
+=======
+                                          "\n                                            Whether its your own properties or those of your clients, Shortleest is here to help. From creating vacancies, adding tenants and scheduling any maintanance work to be done on the properties.\n                                        "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
+                                        )
+                                      ])
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-flex",
+                                { attrs: { xs12: "", md4: "" } },
+                                [
+                                  _c(
+                                    "v-card",
+<<<<<<< HEAD
                                     { staticClass: "white" },
                                     [
                                       _c(
@@ -83694,9 +84782,15 @@ var render = function() {
                                                 "display-1 font-weight-bold blue--text"
                                             },
                                             [_vm._v("Convenient")]
-                                          )
-                                        ]
-                                      ),
+=======
+                                    { attrs: { outlined: "" } },
+                                    [
+                                      _c("v-img", {
+                                        attrs: {
+                                          height: "250",
+                                          src: "./images/home_tenants.jpg"
+                                        }
+                                      }),
                                       _vm._v(" "),
                                       _c(
                                         "v-card-title",
@@ -83709,16 +84803,19 @@ var render = function() {
                                             "div",
                                             {
                                               staticClass:
-                                                "headline text-xs-center"
+                                                "headline teal--text darken-4--text blue--text font-weight-bold"
                                             },
-                                            [_vm._v("Use from anywhere.")]
+                                            [_vm._v("Tenants")]
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                           )
                                         ]
                                       ),
                                       _vm._v(" "),
+<<<<<<< HEAD
+=======
                                       _c("v-card-text", [
                                         _vm._v(
-                                          "\n                                        Since Shortleest is web based, you dont need to have any particular computer\n                                        with you.Any computer\n                                        with a web browser can get you well on your way to finding someone a home.\n                                    "
+                                          "\n                                            Easily track the tenants your have helped secure rental properties.You dont need large filing cabinents to keep track of your tenants and prospective tenants.\n                                        "
                                         )
                                       ])
                                     ],
@@ -83726,6 +84823,63 @@ var render = function() {
                                   )
                                 ],
                                 1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-flex",
+                                { attrs: { xs12: "", md4: "" } },
+                                [
+                                  _c(
+                                    "v-card",
+                                    { attrs: { outlined: "" } },
+                                    [
+                                      _c("v-img", {
+                                        attrs: {
+                                          height: "250",
+                                          src: "./images/home_calendar.jpg"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
+                                      _c(
+                                        "v-card-title",
+                                        {
+                                          staticClass: "layout justify-center",
+                                          attrs: { "primary-title": "" }
+                                        },
+                                        [
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass:
+<<<<<<< HEAD
+                                                "headline text-xs-center"
+                                            },
+                                            [_vm._v("Use from anywhere.")]
+=======
+                                                "headline teal--text darken-4--text blue--text font-weight-bold"
+                                            },
+                                            [_vm._v("Appointments")]
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("v-card-text", [
+                                        _vm._v(
+<<<<<<< HEAD
+                                          "\n                                        Since Shortleest is web based, you dont need to have any particular computer\n                                        with you.Any computer\n                                        with a web browser can get you well on your way to finding someone a home.\n                                    "
+=======
+                                          "\n                                           Manage your appointments with your prospective clients and tenants. Receive timely notifications for your appointments.\n                                        "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
+                                        )
+                                      ])
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+<<<<<<< HEAD
                               ),
                               _vm._v(" "),
                               _c(
@@ -83776,6 +84930,7 @@ var render = function() {
                                   )
                                 ],
                                 1
+=======
                               )
                             ],
                             1
@@ -83785,6 +84940,212 @@ var render = function() {
                       )
                     ],
                     1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "section",
+            {
+              staticClass: "amber lighten-5 d-flex justify-center pa-8 ",
+              staticStyle: { height: "500px" }
+            },
+            [
+              _c(
+                "v-layout",
+                {
+                  staticClass: "white--text",
+                  attrs: {
+                    column: "",
+                    "align-center": "",
+                    "justify-center": ""
+                  }
+                },
+                [
+                  _c(
+                    "h2",
+                    {
+                      staticClass: "display-1 green--text font-weight-bold ma-4"
+                    },
+                    [_vm._v("How does it work?")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-row",
+                    [
+                      _c(
+                        "v-col",
+                        {
+                          staticClass:
+                            "d-flex  align-center justify-center flex-row",
+                          attrs: { cols: "12" }
+                        },
+                        [
+                          _c(
+                            "v-card",
+                            { staticStyle: { "max-width": "300px" } },
+                            [
+                              _c("v-img", {
+                                attrs: {
+                                  height: "250",
+                                  src: "./images/client.jpg"
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "v-card-title",
+                                {
+                                  staticClass:
+                                    "layout justify-center teal--text darken-4--text font-weight-bold",
+                                  attrs: { "primary-title": "" }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                     Add property owner\n                                "
+                                  )
+                                ]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-icon",
+                            {
+                              staticClass: "green--text",
+                              attrs: { size: "80" }
+                            },
+                            [_vm._v("mdi-arrow-right-bold")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-card",
+                            { staticStyle: { "max-width": "300px" } },
+                            [
+                              _c("v-img", {
+                                attrs: {
+                                  height: "250",
+                                  src: "./images/home_property.jpg"
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "v-card-title",
+                                {
+                                  staticClass:
+                                    "layout teal--text darken-4--text justify-center font-weight-bold",
+                                  attrs: { "primary-title": "" }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                    Add client property\n                                "
+                                  )
+                                ]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-icon",
+                            {
+                              staticClass: "green--text",
+                              attrs: { size: "80" }
+                            },
+                            [_vm._v("mdi-arrow-right-bold")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-card",
+                            { staticStyle: { "max-width": "300px" } },
+                            [
+                              _c("v-img", {
+                                attrs: {
+                                  height: "250",
+                                  src: "./images/home_vacancy.jpg"
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "v-card-title",
+                                {
+                                  staticClass:
+                                    "layout justify-center teal--text darken-4--text font-weight-bold",
+                                  attrs: { "primary-title": "" }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                    Create rental vacancy\n                                "
+                                  )
+                                ]
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-icon",
+                            {
+                              staticClass: "green--text",
+                              attrs: { size: "80" }
+                            },
+                            [_vm._v("mdi-arrow-right-bold")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-card",
+                            { staticStyle: { "max-width": "300px" } },
+                            [
+                              _c("v-img", {
+                                attrs: {
+                                  height: "240",
+                                  src: "./images/application.jpg"
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "v-card-title",
+                                {
+                                  staticClass:
+                                    "layout justify-center teal--text darken-4--text font-weight-bold",
+                                  attrs: { "primary-title": "" }
+                                },
+                                [
+                                  _vm._v(
+                                    '\n                                    4. Accept and "ShortLeest" applications\n                                '
+                                  )
+                                ]
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+<<<<<<< HEAD
+=======
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-btn",
+                    {
+                      staticClass: "ma-4",
+                      attrs: {
+                        to: { name: "signup" },
+                        "x-large": "",
+                        outlined: "",
+                        color: "red"
+                      }
+                    },
+                    [_vm._v("I want to try Shortleest")]
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                   )
                 ],
                 1
@@ -83834,9 +85195,16 @@ var render = function() {
                         },
                         [
                           _c(
+<<<<<<< HEAD
                             "p",
                             {
                               staticClass: " text-h2 red--text font-weight-bold"
+=======
+                            "h2",
+                            {
+                              staticClass:
+                                "display-1 green--text font-weight-bold m-2"
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                             },
                             [_vm._v("Pricing")]
                           ),
@@ -83845,7 +85213,11 @@ var render = function() {
                           _vm._v(" "),
                           _c("div", [
                             _vm._v(
+<<<<<<< HEAD
                               "\n                            Manage your real estate business from anywhere, at any time with efficiency.\n                        "
+=======
+                              "\n                                Manage your real estate business from anywhere, at any time with efficiency.\n                            "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                             )
                           ])
                         ]
@@ -83857,7 +85229,14 @@ var render = function() {
                         [
                           _c(
                             "v-card",
+<<<<<<< HEAD
                             { staticClass: "elevation-0  ma-4 transparent" },
+=======
+                            {
+                              staticClass: "elevation-0  ma-4 transparent",
+                              attrs: { outlined: "" }
+                            },
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                             [
                               _c(
                                 "v-row",
@@ -83870,7 +85249,14 @@ var render = function() {
                                         "v-card",
                                         {
                                           staticClass: "mx-auto",
+<<<<<<< HEAD
                                           attrs: { "max-width": "344" }
+=======
+                                          attrs: {
+                                            outlined: "",
+                                            "max-width": "344"
+                                          }
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                         },
                                         [
                                           _c(
@@ -83893,7 +85279,11 @@ var render = function() {
                                                 },
                                                 [
                                                   _vm._v(
+<<<<<<< HEAD
                                                     "\n                                                1 Month\n                                            "
+=======
+                                                    "\n                                                    1 Month\n                                                "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                                   )
                                                 ]
                                               ),
@@ -83936,7 +85326,11 @@ var render = function() {
                                                     },
                                                     [
                                                       _vm._v(
+<<<<<<< HEAD
                                                         "If you are not sure whether Shortleest is\n                                                    for you, try for one\n                                                    month."
+=======
+                                                        "If you are not sure whether Shortleest is\n                                                        for you, try for one\n                                                        month."
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                                       )
                                                     ]
                                                   ),
@@ -83972,7 +85366,11 @@ var render = function() {
                                                                     ]
                                                                   ),
                                                                   _vm._v(
+<<<<<<< HEAD
                                                                     "\n                                                                    Manage clients\n                                                                "
+=======
+                                                                    "\n                                                                        Manage clients\n                                                                    "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                                                   )
                                                                 ],
                                                                 1
@@ -84010,7 +85408,11 @@ var render = function() {
                                                                     ]
                                                                   ),
                                                                   _vm._v(
+<<<<<<< HEAD
                                                                     "\n                                                                Manage vacancies\n                                                            "
+=======
+                                                                    "\n                                                                    Manage vacancies\n                                                                "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                                                   )
                                                                 ],
                                                                 1
@@ -84048,7 +85450,11 @@ var render = function() {
                                                                     ]
                                                                   ),
                                                                   _vm._v(
+<<<<<<< HEAD
                                                                     "\n                                                                Manage client properties\n                                                            "
+=======
+                                                                    "\n                                                                    Manage client properties\n                                                                "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                                                   )
                                                                 ],
                                                                 1
@@ -84086,7 +85492,11 @@ var render = function() {
                                                                     ]
                                                                   ),
                                                                   _vm._v(
+<<<<<<< HEAD
                                                                     "\n                                                                Manage   applications\n                                                            "
+=======
+                                                                    "\n                                                                    Manage   applications\n                                                                "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                                                   )
                                                                 ],
                                                                 1
@@ -84124,7 +85534,11 @@ var render = function() {
                                                                     ]
                                                                   ),
                                                                   _vm._v(
+<<<<<<< HEAD
                                                                     "\n                                                                Manage tenants\n                                                            "
+=======
+                                                                    "\n                                                                    Manage tenants\n                                                                "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                                                   )
                                                                 ],
                                                                 1
@@ -84164,7 +85578,11 @@ var render = function() {
                                                 },
                                                 [
                                                   _vm._v(
+<<<<<<< HEAD
                                                     "\n                                                Signup\n                                            "
+=======
+                                                    "\n                                                    Signup\n                                                "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                                   )
                                                 ]
                                               )
@@ -84186,7 +85604,14 @@ var render = function() {
                                         "v-card",
                                         {
                                           staticClass: "mx-auto",
+<<<<<<< HEAD
                                           attrs: { "max-width": "344" }
+=======
+                                          attrs: {
+                                            outlined: "",
+                                            "max-width": "344"
+                                          }
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                         },
                                         [
                                           _c(
@@ -84209,7 +85634,11 @@ var render = function() {
                                                 },
                                                 [
                                                   _vm._v(
+<<<<<<< HEAD
                                                     "\n                                                30 Days\n                                            "
+=======
+                                                    "\n                                                    30 Days\n                                                "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                                   )
                                                 ]
                                               ),
@@ -84240,7 +85669,11 @@ var render = function() {
                                                 },
                                                 [
                                                   _vm._v(
+<<<<<<< HEAD
                                                     "For as little as $12, you can get to manage\n                                                rentals and tenants\n                                                seamlessly."
+=======
+                                                    "For as little as $12, you can get to manage\n                                                    rentals and tenants\n                                                    seamlessly."
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                                   )
                                                 ]
                                               ),
@@ -84276,7 +85709,11 @@ var render = function() {
                                                                 ]
                                                               ),
                                                               _vm._v(
+<<<<<<< HEAD
                                                                 "\n                                                            Manage clients\n                                                        "
+=======
+                                                                "\n                                                                Manage clients\n                                                            "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                                               )
                                                             ],
                                                             1
@@ -84314,7 +85751,11 @@ var render = function() {
                                                                 ]
                                                               ),
                                                               _vm._v(
+<<<<<<< HEAD
                                                                 "\n                                                            Manage vacancies\n                                                        "
+=======
+                                                                "\n                                                                Manage vacancies\n                                                            "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                                               )
                                                             ],
                                                             1
@@ -84352,7 +85793,11 @@ var render = function() {
                                                                 ]
                                                               ),
                                                               _vm._v(
+<<<<<<< HEAD
                                                                 "\n                                                            Manage client  properties\n                                                        "
+=======
+                                                                "\n                                                                Manage client  properties\n                                                            "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                                               )
                                                             ],
                                                             1
@@ -84390,7 +85835,11 @@ var render = function() {
                                                                 ]
                                                               ),
                                                               _vm._v(
+<<<<<<< HEAD
                                                                 "\n                                                            Manage applications\n                                                        "
+=======
+                                                                "\n                                                                Manage applications\n                                                            "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                                               )
                                                             ],
                                                             1
@@ -84428,7 +85877,11 @@ var render = function() {
                                                                 ]
                                                               ),
                                                               _vm._v(
+<<<<<<< HEAD
                                                                 "\n                                                            Manage tenants\n                                                        "
+=======
+                                                                "\n                                                                Manage tenants\n                                                            "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                                               )
                                                             ],
                                                             1
@@ -84465,7 +85918,11 @@ var render = function() {
                                                 },
                                                 [
                                                   _vm._v(
+<<<<<<< HEAD
                                                     "\n                                                Sign In\n                                            "
+=======
+                                                    "\n                                                    Sign In\n                                                "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                                   )
                                                 ]
                                               )
@@ -84524,6 +85981,7 @@ var render = function() {
                     [
                       _c(
                         "v-flex",
+<<<<<<< HEAD
                         { attrs: { xs12: "", sm4: "", "offset-sm1": "" } },
                         [
                           _c(
@@ -84619,6 +86077,8 @@ var render = function() {
                       _vm._v(" "),
                       _c(
                         "v-flex",
+=======
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                         { attrs: { xs12: "", sm4: "" } },
                         [
                           _c(
@@ -84644,7 +86104,11 @@ var render = function() {
                               _vm._v(" "),
                               _c("v-card-text", { staticClass: "subtitle-1" }, [
                                 _vm._v(
+<<<<<<< HEAD
                                   "\n                                If you have any questions, suggestions, queries, e.t.c you can contact us at "
+=======
+                                  "\n                                    If you have any questions, suggestions, queries, e.t.c you can contact us at "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                                 ),
                                 _c(
                                   "a",
@@ -84699,7 +86163,11 @@ var render = function() {
                   _vm._v(" "),
                   _c("v-card-text", { staticClass: "white--text pt-0" }, [
                     _vm._v(
+<<<<<<< HEAD
                       "\n                    Are you tired of going through a heap of files to find information about clients whose property\n                    you are\n                    managing? Are you tired of having to carry a tone of papers with you inorder to work remotely?\n                    Are you tired\n                    of having to download sanned copies of tenant applications? . Welcome to ShortLeest! Become more\n                    efficient at managing properties, whether the properties are yours or belong to your clients\n                "
+=======
+                      "\n                        Are you tired of going through a heap of files to find information about clients whose property\n                        you are\n                        managing? Are you tired of having to carry a tone of papers with you inorder to work remotely?\n                        Are you tired\n                        of having to download sanned copies of tenant applications? . Welcome to ShortLeest! Become more\n                        efficient at managing properties, whether the properties are yours or belong to your clients\n                    "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                     )
                   ]),
                   _vm._v(" "),
@@ -84724,7 +86192,11 @@ var render = function() {
                           },
                           [
                             _vm._v(
+<<<<<<< HEAD
                               "Privacy\n                            Policy\n                        "
+=======
+                              "Privacy\n                                Policy\n                            "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                             )
                           ]
                         ),
@@ -84737,7 +86209,11 @@ var render = function() {
                           },
                           [
                             _vm._v(
+<<<<<<< HEAD
                               "Terms and\n                            conditions\n                        "
+=======
+                              "Terms and\n                                conditions\n                            "
+>>>>>>> 3d201cdcb6a176af6e24e0ff897e4ca2c230ffed
                             )
                           ]
                         )
